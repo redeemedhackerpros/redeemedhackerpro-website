@@ -1,1 +1,15 @@
-{"items": [], "daily_counts": {}}
+{
+  "items": [
+    {
+      "date": "2026-10-13",
+      "topic": "Use a password manager",
+      "title": "Quick security tip: Use a password manager",
+      "category": "Account Security",
+      "path": "posts/2026/10/use-a-password-manager-c04f7c58.html",
+      "content_hash": "262ff03e92eb50c01545660f7698069aee2a477d9de8c825bb9d374a51d9fa97"
+    }
+  ],
+  "daily_counts": {
+    "2026-10-13": 1
+  }
+}
