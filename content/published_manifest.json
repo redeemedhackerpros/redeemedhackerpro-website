@@ -15,9 +15,17 @@
       "category": "Account Security",
       "path": "posts/2026/10/turn-on-multifactor-authentication-d0fbf4b6.html",
       "content_hash": "b8ca7c5e87b027c5896db79997448f173496e3607045032f2fc32f1e3817c095"
+    },
+    {
+      "date": "2026-10-13",
+      "topic": "Spot urgent-message scams",
+      "title": "Quick security tip: Spot urgent-message scams",
+      "category": "Scam Awareness",
+      "path": "posts/2026/10/spot-urgent-message-scams-371380fb.html",
+      "content_hash": "2fc8da9d168ccf41b3470608acd8703415b5d59df54eec624971670712b8ddd6"
     }
   ],
   "daily_counts": {
-    "2026-10-13": 2
+    "2026-10-13": 3
   }
 }
