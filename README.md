@@ -1,25 +1,30 @@
-# Redeemed Hacker Pro Cybersecurity — website starter
+# Redeemed Hacker Pro — short-form publishing starter
 
-A responsive static website built with HTML, CSS, and JavaScript. The `assets/` folder contains selected images supplied in the conversation.
+This starter creates short evergreen cybersecurity awareness posts from a curated topic file, checks for duplicates, and publishes only posts that pass local checks. It is template-based and does not require a paid AI API.
 
-## Preview
-Open `index.html` in a browser. No build step is required.
+## Safe defaults
+- Maximum 20 posts per UTC day.
+- Maximum 5 posts per scheduled run.
+- Duplicate-title and normalized-content-hash checks.
+- Only topics listed in `content/topics/topics.json` are used.
+- No live-news claims, invented statistics, or promises of guaranteed protection.
+- Generated pages go to `posts/YYYY/MM/slug.html`; `posts/index.html` lists them.
 
-## Before publishing
-1. Confirm that `redeemedhackerpro.com` is registered to you and points to your hosting provider before publishing. The canonical URL is set to `https://redeemedhackerpro.com/`.
-2. The contact form is configured for `redeemedhackerpro@zohomail.com` and opens the visitor's email app (`mailto:`); it does not send or store submissions. The Gmail address is listed for general inquiries/administration.
-3. Add your actual legal business name, verified contact details, location, qualifications, pricing, and service scope.
-4. Remove or rewrite any service claims you cannot verify or actually deliver.
-5. Review `privacy.html` and `terms.html` for your real practices and applicable laws; these are starter templates, not legal advice.
-6. Add real, consented, anonymized case studies only. The current case studies are explicitly fictional educational scenarios.
-7. Replace the canonical URL and add your real domain, sitemap, robots.txt, and analytics only if applicable.
+## Install into your existing repository
+1. Download and unzip this kit.
+2. Copy `.github/`, `scripts/`, and `content/` into the ROOT of your existing `redeemedhackerpro-website` repository. Merge folders if they already exist.
+3. Back up any existing `posts/` folder before merging generated content.
+4. Commit the files to `main`.
+5. In GitHub, open **Settings → Actions → General** and check that workflows are allowed. The workflow requests `contents: write`; organization policies may override this.
+6. Open **Actions → Redeemed Hacker Pro - Short Posts** and click **Run workflow**.
+7. Check the logs; passing posts are committed automatically.
+8. Once hosting is configured, visit `/posts/`.
 
-## Publish with GitHub Pages
-1. Create or open the repository you want to use.
-2. Upload the contents of this folder (not just the ZIP file) to the repository's publishing branch/root.
-3. Commit the files.
-4. In GitHub, open **Settings → Pages**, choose the branch and root folder, and save.
-5. Wait for the Pages deployment, then test the homepage and each policy page on mobile and desktop.
+## Schedule
+The workflow runs at 00:17, 08:17, and 16:17 UTC. Each run attempts at most five posts; the hard cap is twenty per UTC day. GitHub scheduled runs may be delayed.
 
-## Trust and safety
-This template intentionally avoids claims of guaranteed recovery, government affiliation, licensing, certifications, or verified client success. Do not request seed phrases, private keys, passwords, or authentication codes. Transaction tracing is not the same as recovering funds.
+## Limits and AI
+This starter uses curated topics and templates, not a generative AI API. It does not generate current news or videos. A consumer AI subscription does not automatically include free API usage. If adding AI later, use provider credentials only as GitHub Actions secrets and impose strict cost limits.
+
+## Hosting policy warning
+GitHub's published policy says Pages is not intended or allowed as free hosting for websites primarily directed at running an online business or commercial service. Confirm your intended use with GitHub or use a host whose terms fit your business before production use. Netlify's free tier currently lists 300 monthly usage credits and sites can pause when credits run out. Cloudflare Pages documents free static-asset requests, while functions use Workers quotas. Check current terms and limits before migrating; no free plan guarantees unlimited commercial publishing.
