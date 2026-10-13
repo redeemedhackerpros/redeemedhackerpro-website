@@ -7,9 +7,17 @@
       "category": "Account Security",
       "path": "posts/2026/10/use-a-password-manager-c04f7c58.html",
       "content_hash": "262ff03e92eb50c01545660f7698069aee2a477d9de8c825bb9d374a51d9fa97"
+    },
+    {
+      "date": "2026-10-13",
+      "topic": "Turn on multifactor authentication",
+      "title": "Cybersecurity reminder: Turn on multifactor authentication",
+      "category": "Account Security",
+      "path": "posts/2026/10/turn-on-multifactor-authentication-d0fbf4b6.html",
+      "content_hash": "b8ca7c5e87b027c5896db79997448f173496e3607045032f2fc32f1e3817c095"
     }
   ],
   "daily_counts": {
-    "2026-10-13": 1
+    "2026-10-13": 2
   }
 }
