@@ -39,10 +39,18 @@
       "category": "Account Security",
       "path": "posts/2026/10/use-a-password-manager-9cd31247.html",
       "content_hash": "1c048de1283ac874cde683660a9e3359a930b8731d255945355b0ba5a4371196"
+    },
+    {
+      "date": "2026-10-14",
+      "topic": "Check links before signing in",
+      "title": "Security habit to try: Check links before signing in",
+      "category": "Safe Browsing",
+      "path": "posts/2026/10/check-links-before-signing-in-c109803e.html",
+      "content_hash": "2fca66c9ba14528579e2de392c04e65912ab4b0b9fcc775a32407845826ef181"
     }
   ],
   "daily_counts": {
     "2026-10-13": 3,
-    "2026-10-14": 2
+    "2026-10-14": 3
   }
 }
