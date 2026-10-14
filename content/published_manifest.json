@@ -31,10 +31,18 @@
       "category": "Account Security",
       "path": "posts/2026/10/turn-on-multifactor-authentication-d4b956f4.html",
       "content_hash": "4b295ff3f2eb25a491d390e6167795a9fe5a2d6accc18d53816b48f3bc6489b3"
+    },
+    {
+      "date": "2026-10-14",
+      "topic": "Use a password manager",
+      "title": "Security habit to try: Use a password manager",
+      "category": "Account Security",
+      "path": "posts/2026/10/use-a-password-manager-9cd31247.html",
+      "content_hash": "1c048de1283ac874cde683660a9e3359a930b8731d255945355b0ba5a4371196"
     }
   ],
   "daily_counts": {
     "2026-10-13": 3,
-    "2026-10-14": 1
+    "2026-10-14": 2
   }
 }
