@@ -55,11 +55,19 @@
       "category": "Scam Awareness",
       "path": "posts/2026/10/spot-urgent-message-scams-df0850fb.html",
       "content_hash": "27813e8ab21bfc16608997b24cab5df21b9098aa33d417dae879e95ea3762192"
+    },
+    {
+      "date": "2026-10-15",
+      "topic": "Check links before signing in",
+      "title": "Quick security tip: Check links before signing in",
+      "category": "Safe Browsing",
+      "path": "posts/2026/10/check-links-before-signing-in-dea77b58.html",
+      "content_hash": "dc79ce8560928255a1c892b1d0302aabf245f28e841e75b2449e0b2983f5660f"
     }
   ],
   "daily_counts": {
     "2026-10-13": 3,
     "2026-10-14": 3,
-    "2026-10-15": 1
+    "2026-10-15": 2
   }
 }
