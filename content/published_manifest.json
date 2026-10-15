@@ -47,10 +47,19 @@
       "category": "Safe Browsing",
       "path": "posts/2026/10/check-links-before-signing-in-c109803e.html",
       "content_hash": "2fca66c9ba14528579e2de392c04e65912ab4b0b9fcc775a32407845826ef181"
+    },
+    {
+      "date": "2026-10-15",
+      "topic": "Spot urgent-message scams",
+      "title": "Cybersecurity reminder: Spot urgent-message scams",
+      "category": "Scam Awareness",
+      "path": "posts/2026/10/spot-urgent-message-scams-df0850fb.html",
+      "content_hash": "27813e8ab21bfc16608997b24cab5df21b9098aa33d417dae879e95ea3762192"
     }
   ],
   "daily_counts": {
     "2026-10-13": 3,
-    "2026-10-14": 3
+    "2026-10-14": 3,
+    "2026-10-15": 1
   }
 }
