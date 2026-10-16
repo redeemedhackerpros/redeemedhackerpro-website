@@ -87,12 +87,20 @@
       "category": "Scam Awareness",
       "path": "posts/2026/10/spot-urgent-message-scams-502ba639.html",
       "content_hash": "d21abc60aaadc10675aad7dd0ed434de0cf94e254eafc9272569d4e19abd07fb"
+    },
+    {
+      "date": "2026-10-16",
+      "topic": "Turn on multifactor authentication",
+      "title": "Small step, stronger security: Turn on multifactor authentication",
+      "category": "Account Security",
+      "path": "posts/2026/10/turn-on-multifactor-authentication-8587cbbc.html",
+      "content_hash": "1c955fe9a857af40988eafaeb8d69e921b4fed4c064cc2473b7e9cf9960ed2f2"
     }
   ],
   "daily_counts": {
     "2026-10-13": 3,
     "2026-10-14": 3,
     "2026-10-15": 3,
-    "2026-10-16": 2
+    "2026-10-16": 3
   }
 }
