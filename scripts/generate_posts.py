@@ -179,7 +179,7 @@ footer {{
     for x in sorted(items,key=lambda x:(x.get('date',''),x.get('title','')),reverse=True):
         rows.append(f'<li><time>{html.escape(str(x.get("date","")))}</time> — <a href="/{html.escape(str(x.get("path","")),quote=True)}">{html.escape(str(x.get("title","")))}</a> <small>({html.escape(str(x.get("category","")))})</small></li>')
     listing='\n'.join(rows) or '<li>No posts published yet.</li>'
-    (POSTS/'index.html').write_text(f'<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Cybersecurity Short Posts | Redeemed Hacker Pro</title><meta name="description" content="Short cybersecurity awareness tips from Redeemed Hacker Pro."></head><body><main><h1>Cybersecurity Short Posts</h1><p>Practical cybersecurity awareness tips.</p><ol>{listing}</ol><p><a href="/">Return to Redeemed Hacker Pro</a></p></main></body></html>',encoding='utf-8')
+    <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Cybersecurity Short Posts | Redeemed Hacker Pro</title><meta name="description" content="Short cybersecurity awareness tips from Redeemed Hacker Pro."></head><body><main><h1>Cybersecurity Short Posts</h1><p>Practical cybersecurity awareness tips.</p><ol>{listing}</ol><p><a href="/">Return to Redeemed Hacker Pro</a></p></main></body></html>',encoding='utf-8')
 def main():
     p=argparse.ArgumentParser(); p.add_argument('--limit',type=int,default=5); p.add_argument('--date',help='UTC date YYYY-MM-DD'); a=p.parse_args()
     if not 1<=a.limit<=MAX_PER_RUN: raise SystemExit(f'--limit must be 1–{MAX_PER_RUN}')
