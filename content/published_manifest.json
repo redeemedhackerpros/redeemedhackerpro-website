@@ -119,6 +119,14 @@
       "category": "Safe Browsing",
       "path": "posts/2026/10/be-careful-with-public-wi-fi-e9d714c7.html",
       "content_hash": "8c8d75a79d3758ec1a2b5d42a427c94522fc61bb460bbbaa7a0abedf35effc20"
+    },
+    {
+      "date": "2026-10-17",
+      "topic": "Use a password manager",
+      "title": "Small step, stronger security: Use a password manager",
+      "category": "Account Security",
+      "path": "posts/2026/10/use-a-password-manager-ed99f97e.html",
+      "content_hash": "c762626f40286cd6b395729fe6429820177a8d8d5fc3f827bee8b1d9e9e1d772"
     }
   ],
   "daily_counts": {
@@ -126,6 +134,6 @@
     "2026-10-14": 3,
     "2026-10-15": 3,
     "2026-10-16": 3,
-    "2026-10-17": 3
+    "2026-10-17": 4
   }
 }
