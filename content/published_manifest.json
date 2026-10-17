@@ -111,6 +111,14 @@
       "category": "Data Protection",
       "path": "posts/2026/10/back-up-important-files-71fa9e24.html",
       "content_hash": "fb29cc9faee3fa795616180632d0d6fea909890f92f9e86194e80da67396b08c"
+    },
+    {
+      "date": "2026-10-17",
+      "topic": "Be careful with public Wi-Fi",
+      "title": "Quick security tip: Be careful with public Wi-Fi",
+      "category": "Safe Browsing",
+      "path": "posts/2026/10/be-careful-with-public-wi-fi-e9d714c7.html",
+      "content_hash": "8c8d75a79d3758ec1a2b5d42a427c94522fc61bb460bbbaa7a0abedf35effc20"
     }
   ],
   "daily_counts": {
@@ -118,6 +126,6 @@
     "2026-10-14": 3,
     "2026-10-15": 3,
     "2026-10-16": 3,
-    "2026-10-17": 2
+    "2026-10-17": 3
   }
 }
