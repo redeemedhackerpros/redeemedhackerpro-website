@@ -95,12 +95,21 @@
       "category": "Account Security",
       "path": "posts/2026/10/turn-on-multifactor-authentication-8587cbbc.html",
       "content_hash": "1c955fe9a857af40988eafaeb8d69e921b4fed4c064cc2473b7e9cf9960ed2f2"
+    },
+    {
+      "date": "2026-10-17",
+      "topic": "Update devices promptly",
+      "title": "Quick security tip: Update devices promptly",
+      "category": "Device Security",
+      "path": "posts/2026/10/update-devices-promptly-f94d27bc.html",
+      "content_hash": "991432fb7a89901a9a3b37f53c1d77adb80740aca0f6c4e15480bc6c487ac8d7"
     }
   ],
   "daily_counts": {
     "2026-10-13": 3,
     "2026-10-14": 3,
     "2026-10-15": 3,
-    "2026-10-16": 3
+    "2026-10-16": 3,
+    "2026-10-17": 1
   }
 }

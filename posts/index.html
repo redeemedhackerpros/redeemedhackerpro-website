@@ -1,12 +1,141 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Cybersecurity Short Posts | Redeemed Hacker Pro</title><meta name="description" content="Short cybersecurity awareness tips from Redeemed Hacker Pro."></head><body><main><h1>Cybersecurity Short Posts</h1><p>Practical cybersecurity awareness tips.</p><ol><li><time>2026-10-16</time> — <a href="/posts/2026/10/turn-on-multifactor-authentication-8587cbbc.html">Small step, stronger security: Turn on multifactor authentication</a> <small>(Account Security)</small></li>
-<li><time>2026-10-16</time> — <a href="/posts/2026/10/spot-urgent-message-scams-502ba639.html">Small step, stronger security: Spot urgent-message scams</a> <small>(Scam Awareness)</small></li>
-<li><time>2026-10-16</time> — <a href="/posts/2026/10/check-links-before-signing-in-00330cac.html">Small step, stronger security: Check links before signing in</a> <small>(Safe Browsing)</small></li>
-<li><time>2026-10-15</time> — <a href="/posts/2026/10/check-links-before-signing-in-dea77b58.html">Quick security tip: Check links before signing in</a> <small>(Safe Browsing)</small></li>
-<li><time>2026-10-15</time> — <a href="/posts/2026/10/use-a-password-manager-27121bcc.html">Cybersecurity reminder: Use a password manager</a> <small>(Account Security)</small></li>
-<li><time>2026-10-15</time> — <a href="/posts/2026/10/spot-urgent-message-scams-df0850fb.html">Cybersecurity reminder: Spot urgent-message scams</a> <small>(Scam Awareness)</small></li>
-<li><time>2026-10-14</time> — <a href="/posts/2026/10/use-a-password-manager-9cd31247.html">Security habit to try: Use a password manager</a> <small>(Account Security)</small></li>
-<li><time>2026-10-14</time> — <a href="/posts/2026/10/turn-on-multifactor-authentication-d4b956f4.html">Security habit to try: Turn on multifactor authentication</a> <small>(Account Security)</small></li>
-<li><time>2026-10-14</time> — <a href="/posts/2026/10/check-links-before-signing-in-c109803e.html">Security habit to try: Check links before signing in</a> <small>(Safe Browsing)</small></li>
-<li><time>2026-10-13</time> — <a href="/posts/2026/10/use-a-password-manager-c04f7c58.html">Quick security tip: Use a password manager</a> <small>(Account Security)</small></li>
-<li><time>2026-10-13</time> — <a href="/posts/2026/10/spot-urgent-message-scams-371380fb.html">Quick security tip: Spot urgent-message scams</a> <small>(Scam Awareness)</small></li>
-<li><time>2026-10-13</time> — <a href="/posts/2026/10/turn-on-multifactor-authentication-d0fbf4b6.html">Cybersecurity reminder: Turn on multifactor authentication</a> <small>(Account Security)</small></li></ol><p><a href="/">Return to Redeemed Hacker Pro</a></p></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Short cybersecurity awareness tips from Redeemed Hacker Pro.">
+<title>Cybersecurity Short Posts | Redeemed Hacker Pro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #07101f;
+  --panel: #0c1b30;
+  --cyan: #42d9f4;
+  --green: #70f4c5;
+  --text: #edf5ff;
+  --muted: #a4b5cc;
+  --border: rgba(100,180,230,.2);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at top, #102746 0%, var(--bg) 58%);
+  color: var(--text);
+  font-family: Manrope, Arial, sans-serif;
+  line-height: 1.7;
+}
+.wrap { width: min(1000px, calc(100% - 32px)); margin: 0 auto; }
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--border);
+}
+.brand { font-size: 19px; font-weight: 800; letter-spacing: -.04em; }
+.brand span { color: var(--cyan); }
+.tag {
+  color: var(--green);
+  font: 12px 'DM Mono', monospace;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+main { padding: 48px 0 64px; }
+.eyebrow {
+  color: var(--green);
+  font: 12px 'DM Mono', monospace;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+h1 {
+  margin: 12px 0;
+  color: white;
+  font-size: clamp(32px, 6vw, 52px);
+  line-height: 1.15;
+  letter-spacing: -.045em;
+}
+.intro { color: var(--muted); margin-bottom: 28px; }
+.panel {
+  padding: clamp(18px, 4vw, 32px);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: linear-gradient(145deg, rgba(12,27,48,.96), rgba(7,16,31,.96));
+  box-shadow: 0 24px 80px rgba(0,0,0,.22);
+}
+ol { list-style: none; padding: 0; margin: 0; }
+.post-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}
+.post-item:last-child { border-bottom: 0; }
+time, .category {
+  color: var(--muted);
+  font: 12px 'DM Mono', monospace;
+}
+a { color: var(--cyan); text-decoration: none; }
+a:hover { color: var(--green); text-decoration: underline; }
+.dash { color: var(--muted); }
+.category {
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 2px 8px;
+}
+.back {
+  display: inline-block;
+  margin-top: 28px;
+  color: var(--green);
+  font-size: 14px;
+}
+footer {
+  padding: 24px 0;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .post-item { gap: 6px; }
+  .category { font-size: 10px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="brand">REDEEMED <span>HACKER PRO</span></div>
+  <div class="tag">Security awareness</div>
+</header>
+<main>
+  <div class="eyebrow">Learn · Protect · Stay aware</div>
+  <h1>Cybersecurity Short Posts</h1>
+  <p class="intro">Practical cybersecurity awareness tips to help you stay safer online.</p>
+  <section class="panel">
+    <ol><li class="post-item"><time>2026-10-17</time><span class="dash">—</span> <a href="/posts/2026/10/update-devices-promptly-f94d27bc.html">Quick security tip: Update devices promptly</a> <span class="category">Device Security</span></li>
+<li class="post-item"><time>2026-10-16</time><span class="dash">—</span> <a href="/posts/2026/10/turn-on-multifactor-authentication-8587cbbc.html">Small step, stronger security: Turn on multifactor authentication</a> <span class="category">Account Security</span></li>
+<li class="post-item"><time>2026-10-16</time><span class="dash">—</span> <a href="/posts/2026/10/spot-urgent-message-scams-502ba639.html">Small step, stronger security: Spot urgent-message scams</a> <span class="category">Scam Awareness</span></li>
+<li class="post-item"><time>2026-10-16</time><span class="dash">—</span> <a href="/posts/2026/10/check-links-before-signing-in-00330cac.html">Small step, stronger security: Check links before signing in</a> <span class="category">Safe Browsing</span></li>
+<li class="post-item"><time>2026-10-15</time><span class="dash">—</span> <a href="/posts/2026/10/check-links-before-signing-in-dea77b58.html">Quick security tip: Check links before signing in</a> <span class="category">Safe Browsing</span></li>
+<li class="post-item"><time>2026-10-15</time><span class="dash">—</span> <a href="/posts/2026/10/use-a-password-manager-27121bcc.html">Cybersecurity reminder: Use a password manager</a> <span class="category">Account Security</span></li>
+<li class="post-item"><time>2026-10-15</time><span class="dash">—</span> <a href="/posts/2026/10/spot-urgent-message-scams-df0850fb.html">Cybersecurity reminder: Spot urgent-message scams</a> <span class="category">Scam Awareness</span></li>
+<li class="post-item"><time>2026-10-14</time><span class="dash">—</span> <a href="/posts/2026/10/use-a-password-manager-9cd31247.html">Security habit to try: Use a password manager</a> <span class="category">Account Security</span></li>
+<li class="post-item"><time>2026-10-14</time><span class="dash">—</span> <a href="/posts/2026/10/turn-on-multifactor-authentication-d4b956f4.html">Security habit to try: Turn on multifactor authentication</a> <span class="category">Account Security</span></li>
+<li class="post-item"><time>2026-10-14</time><span class="dash">—</span> <a href="/posts/2026/10/check-links-before-signing-in-c109803e.html">Security habit to try: Check links before signing in</a> <span class="category">Safe Browsing</span></li>
+<li class="post-item"><time>2026-10-13</time><span class="dash">—</span> <a href="/posts/2026/10/use-a-password-manager-c04f7c58.html">Quick security tip: Use a password manager</a> <span class="category">Account Security</span></li>
+<li class="post-item"><time>2026-10-13</time><span class="dash">—</span> <a href="/posts/2026/10/spot-urgent-message-scams-371380fb.html">Quick security tip: Spot urgent-message scams</a> <span class="category">Scam Awareness</span></li>
+<li class="post-item"><time>2026-10-13</time><span class="dash">—</span> <a href="/posts/2026/10/turn-on-multifactor-authentication-d0fbf4b6.html">Cybersecurity reminder: Turn on multifactor authentication</a> <span class="category">Account Security</span></li></ol>
+  </section>
+  <a class="back" href="/">&larr; Return to Redeemed Hacker Pro</a>
+</main>
+<footer>&copy; Redeemed Hacker Pro &middot; Stay aware. Stay secure.</footer>
+</div>
+</body>
+</html>
