@@ -103,6 +103,14 @@
       "category": "Device Security",
       "path": "posts/2026/10/update-devices-promptly-f94d27bc.html",
       "content_hash": "991432fb7a89901a9a3b37f53c1d77adb80740aca0f6c4e15480bc6c487ac8d7"
+    },
+    {
+      "date": "2026-10-17",
+      "topic": "Back up important files",
+      "title": "Cybersecurity reminder: Back up important files",
+      "category": "Data Protection",
+      "path": "posts/2026/10/back-up-important-files-71fa9e24.html",
+      "content_hash": "fb29cc9faee3fa795616180632d0d6fea909890f92f9e86194e80da67396b08c"
     }
   ],
   "daily_counts": {
@@ -110,6 +118,6 @@
     "2026-10-14": 3,
     "2026-10-15": 3,
     "2026-10-16": 3,
-    "2026-10-17": 1
+    "2026-10-17": 2
   }
 }
