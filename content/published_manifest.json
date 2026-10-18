@@ -143,6 +143,14 @@
       "category": "Device Security",
       "path": "posts/2026/10/update-devices-promptly-aa406b0d.html",
       "content_hash": "f7cc4c23a6d49152f3af33dfcbdc9d212d9559e7b584680e9c5ca49e18ec5424"
+    },
+    {
+      "date": "2026-10-18",
+      "topic": "Review app permissions",
+      "title": "Security habit to try: Review app permissions",
+      "category": "Privacy",
+      "path": "posts/2026/10/review-app-permissions-4f89834e.html",
+      "content_hash": "1b1ee8c46e8cb3de7a915fde49c292e670d5432a0beb5b606b35ddf81e30d5a7"
     }
   ],
   "daily_counts": {
@@ -151,6 +159,6 @@
     "2026-10-15": 3,
     "2026-10-16": 3,
     "2026-10-17": 4,
-    "2026-10-18": 2
+    "2026-10-18": 3
   }
 }
