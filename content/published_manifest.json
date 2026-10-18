@@ -127,6 +127,14 @@
       "category": "Account Security",
       "path": "posts/2026/10/use-a-password-manager-ed99f97e.html",
       "content_hash": "c762626f40286cd6b395729fe6429820177a8d8d5fc3f827bee8b1d9e9e1d772"
+    },
+    {
+      "date": "2026-10-18",
+      "topic": "Back up important files",
+      "title": "Security habit to try: Back up important files",
+      "category": "Data Protection",
+      "path": "posts/2026/10/back-up-important-files-6b819644.html",
+      "content_hash": "9d541f95ab7e723a868343e86f14a3ccb782e7eb5555fee411eaa4da89e94b4a"
     }
   ],
   "daily_counts": {
@@ -134,6 +142,7 @@
     "2026-10-14": 3,
     "2026-10-15": 3,
     "2026-10-16": 3,
-    "2026-10-17": 4
+    "2026-10-17": 4,
+    "2026-10-18": 1
   }
 }
