@@ -135,6 +135,14 @@
       "category": "Data Protection",
       "path": "posts/2026/10/back-up-important-files-6b819644.html",
       "content_hash": "9d541f95ab7e723a868343e86f14a3ccb782e7eb5555fee411eaa4da89e94b4a"
+    },
+    {
+      "date": "2026-10-18",
+      "topic": "Update devices promptly",
+      "title": "Security habit to try: Update devices promptly",
+      "category": "Device Security",
+      "path": "posts/2026/10/update-devices-promptly-aa406b0d.html",
+      "content_hash": "f7cc4c23a6d49152f3af33dfcbdc9d212d9559e7b584680e9c5ca49e18ec5424"
     }
   ],
   "daily_counts": {
@@ -143,6 +151,6 @@
     "2026-10-15": 3,
     "2026-10-16": 3,
     "2026-10-17": 4,
-    "2026-10-18": 1
+    "2026-10-18": 2
   }
 }
