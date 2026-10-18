@@ -151,6 +151,14 @@
       "category": "Privacy",
       "path": "posts/2026/10/review-app-permissions-4f89834e.html",
       "content_hash": "1b1ee8c46e8cb3de7a915fde49c292e670d5432a0beb5b606b35ddf81e30d5a7"
+    },
+    {
+      "date": "2026-10-18",
+      "topic": "Turn on multifactor authentication",
+      "title": "Quick security tip: Turn on multifactor authentication",
+      "category": "Account Security",
+      "path": "posts/2026/10/turn-on-multifactor-authentication-2f0f239a.html",
+      "content_hash": "80063787b4bc02591e02d58dc0af257e7bb6f7a68b3a154d9740c0632db3a992"
     }
   ],
   "daily_counts": {
@@ -159,6 +167,6 @@
     "2026-10-15": 3,
     "2026-10-16": 3,
     "2026-10-17": 4,
-    "2026-10-18": 3
+    "2026-10-18": 4
   }
 }
