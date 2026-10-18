@@ -175,6 +175,41 @@ footer {{
 </body>
 </html>'''
     (POSTS / 'index.html').write_text(page, encoding='utf-8')
+
+def write_sitemap():
+    """Generate sitemap.xml from the published HTML pages in posts/."""
+    site_url = 'https://redeemedhackerpro.com'
+    sitemap_path = ROOT / 'sitemap.xml'
+
+    urls = {
+        '/',
+        '/privacy.html',
+        '/terms.html',
+        '/posts/',
+    }
+
+    if POSTS.exists():
+        for f in POSTS.rglob('*.html'):
+            # The posts index is already listed separately as /posts/.
+            if f.name.lower() == 'index.html' or not f.is_file():
+                continue
+            urls.add('/' + f.relative_to(ROOT).as_posix())
+
+    entries = '\n'.join(
+        '  <url>\n'
+        f'    <loc>{html.escape(site_url + path, quote=True)}</loc>\n'
+        '  </url>'
+        for path in sorted(urls)
+    )
+
+    sitemap = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        f'{entries}\n'
+        '</urlset>\n'
+    )
+    sitemap_path.write_text(sitemap, encoding='utf-8')
+
 def main():
     p=argparse.ArgumentParser(); p.add_argument('--limit',type=int,default=5); p.add_argument('--date',help='UTC date YYYY-MM-DD'); a=p.parse_args()
     if not 1<=a.limit<=MAX_PER_RUN: raise SystemExit(f'--limit must be 1–{MAX_PER_RUN}')
@@ -201,7 +236,7 @@ def main():
         if norm(title) in titles or fp in hashes: print(f'DUPLICATE: skipped {title}'); continue
         slug=slugify(name+'-'+hashlib.sha1(fp.encode()).hexdigest()[:8]); rel=Path('posts')/today[:4]/today[5:7]/(slug+'.html'); out=ROOT/rel; out.parent.mkdir(parents=True,exist_ok=True); out.write_text(render(title,category,body,action,today),encoding='utf-8')
         item={'date':today,'topic':name,'title':title,'category':category,'path':rel.as_posix(),'content_hash':fp}; items.append(item); created.append(item); titles.add(norm(title)); hashes.add(fp); topics_today.add(norm(name))
-    counts[today]=already+len(created); MANIFEST.parent.mkdir(parents=True,exist_ok=True); MANIFEST.write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n',encoding='utf-8'); write_index(items)
+    counts[today]=already+len(created); MANIFEST.parent.mkdir(parents=True,exist_ok=True); MANIFEST.write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n',encoding='utf-8'); write_index(items); write_sitemap()
     print(f'Created {len(created)} post(s) for {today}; daily count {counts[today]}/{MAX_PER_DAY}.')
     for x in created: print(f'PASS: {x["path"]} — {x["title"]}')
     if not created: print('No new posts passed checks. No content was published.')
