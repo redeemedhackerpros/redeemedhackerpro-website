@@ -1,30 +1,28 @@
-# Redeemed Hacker Pro — short-form publishing starter
+Redeemed Hacker Pro sitemap update package
 
-This starter creates short evergreen cybersecurity awareness posts from a curated topic file, checks for duplicates, and publishes only posts that pass local checks. It is template-based and does not require a paid AI API.
+Files:
+- generate_posts_updated.py: replacement contents for scripts/generate_posts.py
+- short-posts-workflow-updated.yml: replacement workflow contents
 
-## Safe defaults
-- Maximum 20 posts per UTC day.
-- Maximum 5 posts per scheduled run.
-- Duplicate-title and normalized-content-hash checks.
-- Only topics listed in `content/topics/topics.json` are used.
-- No live-news claims, invented statistics, or promises of guaranteed protection.
-- Generated pages go to `posts/YYYY/MM/slug.html`; `posts/index.html` lists them.
+What changed:
+- The publishing script regenerates the root sitemap.xml using the homepage, privacy page,
+  terms page, posts index, and every non-index HTML file under posts/.
+- The workflow stages sitemap.xml along with posts and the published manifest.
 
-## Install into your existing repository
-1. Download and unzip this kit.
-2. Copy `.github/`, `scripts/`, and `content/` into the ROOT of your existing `redeemedhackerpro-website` repository. Merge folders if they already exist.
-3. Back up any existing `posts/` folder before merging generated content.
-4. Commit the files to `main`.
-5. In GitHub, open **Settings → Actions → General** and check that workflows are allowed. The workflow requests `contents: write`; organization policies may override this.
-6. Open **Actions → Redeemed Hacker Pro - Short Posts** and click **Run workflow**.
-7. Check the logs; passing posts are committed automatically.
-8. Once hosting is configured, visit `/posts/`.
+How to apply using GitHub's web interface:
+1. Open the repository redeemedhackerpros/redeemedhackerpro-website.
+2. Open scripts/generate_posts.py, click Edit (pencil), replace all contents with
+   generate_posts_updated.py, then commit the change to main.
+3. Open the existing workflow file under .github/workflows that contains the workflow
+   named "Redeemed Hacker Pro - Short Posts". Edit that existing file and replace its
+   contents with short-posts-workflow-updated.yml, then commit to main.
+   Do not create a second scheduled workflow unless you intentionally want two.
+4. Run the workflow once with limit 1 from the Actions tab. Check the run log.
+5. Confirm https://redeemedhackerpro.com/sitemap.xml now lists the article URLs.
 
-## Schedule
-The workflow runs at 00:17, 08:17, and 16:17 UTC. Each run attempts at most five posts; the hard cap is twenty per UTC day. GitHub scheduled runs may be delayed.
-
-## Limits and AI
-This starter uses curated topics and templates, not a generative AI API. It does not generate current news or videos. A consumer AI subscription does not automatically include free API usage. If adding AI later, use provider credentials only as GitHub Actions secrets and impose strict cost limits.
-
-## Hosting policy warning
-GitHub's published policy says Pages is not intended or allowed as free hosting for websites primarily directed at running an online business or commercial service. Confirm your intended use with GitHub or use a host whose terms fit your business before production use. Netlify's free tier currently lists 300 monthly usage credits and sites can pause when credits run out. Cloudflare Pages documents free static-asset requests, while functions use Workers quotas. Check current terms and limits before migrating; no free plan guarantees unlimited commercial publishing.
+Important:
+- Do not upload this ZIP as a ZIP and expect GitHub to unpack it into the repository.
+  Use the files inside to replace the existing files in GitHub.
+- The sitemap will include all non-index .html files under posts/. If similarly named files
+  are duplicate/obsolete articles, review their canonical tags and content separately later.
+- No DNS, domain, or hosting settings are changed by these files.
