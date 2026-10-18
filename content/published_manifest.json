@@ -159,6 +159,14 @@
       "category": "Account Security",
       "path": "posts/2026/10/turn-on-multifactor-authentication-2f0f239a.html",
       "content_hash": "80063787b4bc02591e02d58dc0af257e7bb6f7a68b3a154d9740c0632db3a992"
+    },
+    {
+      "date": "2026-10-18",
+      "topic": "Be careful with public Wi-Fi",
+      "title": "Cybersecurity reminder: Be careful with public Wi-Fi",
+      "category": "Safe Browsing",
+      "path": "posts/2026/10/be-careful-with-public-wi-fi-00ade7dd.html",
+      "content_hash": "0019529e13608b1083dcce28dfa115d72c358a83e1876ccad3b4d2cee5e04b8c"
     }
   ],
   "daily_counts": {
@@ -167,6 +175,6 @@
     "2026-10-15": 3,
     "2026-10-16": 3,
     "2026-10-17": 4,
-    "2026-10-18": 4
+    "2026-10-18": 5
   }
 }
