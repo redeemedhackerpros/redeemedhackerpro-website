@@ -183,6 +183,14 @@
       "category": "Safe Browsing",
       "path": "posts/2026/10/be-careful-with-public-wi-fi-444f3013.html",
       "content_hash": "6aefa16873430c4e7a7b2eb743a1f1468c74986d61d185102e21f293c7d539d2"
+    },
+    {
+      "date": "2026-10-19",
+      "topic": "Update devices promptly",
+      "title": "Cybersecurity reminder: Update devices promptly",
+      "category": "Device Security",
+      "path": "posts/2026/10/update-devices-promptly-fd263aa0.html",
+      "content_hash": "f6965cea6f9223e4a5c23ded4b99c39f0cf9333f8c485f7f30d52a84d024a90d"
     }
   ],
   "daily_counts": {
@@ -192,6 +200,6 @@
     "2026-10-16": 3,
     "2026-10-17": 4,
     "2026-10-18": 5,
-    "2026-10-19": 2
+    "2026-10-19": 3
   }
 }
