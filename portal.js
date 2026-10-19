@@ -130,6 +130,10 @@ $('caseForm').addEventListener('submit', async event => {
       message: String(form.get('message') || '').trim()
     };
     if (!record.subject || !record.category || !record.message) throw new Error('Please complete all fields.');
+    if (record.subject.length < 4) throw new Error('Please make the subject at least 4 characters long.');
+    if (record.category.length < 2) throw new Error('Please choose a valid category.');
+    if (record.message.length < 10) throw new Error('Please make the message at least 10 characters long.');
+    if (record.subject.length > 120) throw new Error('Please keep the subject to 120 characters or fewer.');
     const { error } = await supabase.from('customer_cases').insert(record);
     if (error) throw error;
     $('caseForm').reset();
@@ -179,7 +183,7 @@ function renderCase(item) {
     <p class="case-category">${escapeHtml(item.category)}</p>
     <p class="case-message">${escapeHtml(item.message)}</p>
     ${item.staff_response ? '<div class="response"><strong>Staff response</strong><div class="case-message">' + escapeHtml(item.staff_response) + '</div></div>' : ''}
-    ${isStaff ? `<div class="staff-tools"><label for="status-${id}">Update status</label><select id="status-${id}" data-status><option value="new" ${item.status==='new'?'selected':''}>New</option><option value="in_progress" ${item.status==='in_progress'?'selected':''}>In progress</option><option value="resolved" ${item.status==='resolved'?'selected':''}>Resolved</option></select><label for="response-${id}">Staff response</label><textarea id="response-${id}" data-response rows="3" maxlength="5000" placeholder="Write an update for the customer">${escapeHtml(item.staff_response || '')}</textarea><button class="button primary" type="button" data-save-case="${id}">Save case update</button></div>` : ''}
+    ${isStaff ? `<div class="staff-tools"><label for="status-${id}">Update status</label><select id="status-${id}" data-status><option value="new" ${item.status==='new'?'selected':''}>New</option><option value="in_progress" ${item.status==='in_progress'?'selected':''}>In progress</option><option value="waiting_for_customer" ${item.status==='waiting_for_customer'?'selected':''}>Waiting for customer</option><option value="resolved" ${item.status==='resolved'?'selected':''}>Resolved</option><option value="closed" ${item.status==='closed'?'selected':''}>Closed</option></select><label for="response-${id}">Staff response</label><textarea id="response-${id}" data-response rows="3" maxlength="5000" placeholder="Write an update for the customer">${escapeHtml(item.staff_response || '')}</textarea><button class="button primary" type="button" data-save-case="${id}">Save case update</button></div>` : ''}
   </article>`;
 }
 
