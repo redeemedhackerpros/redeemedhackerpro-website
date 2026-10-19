@@ -2,5 +2,5 @@
 // database access must be protected by Row Level Security. NEVER put a service_role or secret key here.
 window.RHP_SUPABASE_CONFIG = {
   url: "https://jrroakzmlwwhazhilcon.supabase.co",
-  publishableKey: "PASTE_YOUR_SUPABASE_PUBLISHABLE_OR_ANON_KEY_HERE"
+  publishableKey: "sb_publishable_GD_CbVnwa_b38xOyCChxfQ_D5zbxlJr"
 };
