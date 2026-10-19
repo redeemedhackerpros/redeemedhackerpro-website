@@ -69,7 +69,13 @@ create policy "customers and staff can read permitted cases"
 on public.customer_cases
 for select
 to authenticated
-using (user_id = (select auth.uid()) or public.is_case_staff());
+using (
+  user_id = (select auth.uid())
+  or (
+    public.is_case_staff()
+    and ((select auth.jwt()) ->> 'aal') = 'aal2'
+  )
+);
 
 drop policy if exists "customers can create their own cases" on public.customer_cases;
 create policy "customers can create their own cases"
@@ -87,8 +93,14 @@ create policy "staff can update cases"
 on public.customer_cases
 for update
 to authenticated
-using (public.is_case_staff())
-with check (public.is_case_staff());
+using (
+  public.is_case_staff()
+  and ((select auth.jwt()) ->> 'aal') = 'aal2'
+)
+with check (
+  public.is_case_staff()
+  and ((select auth.jwt()) ->> 'aal') = 'aal2'
+);
 
 -- Clients may read cases, but may only insert the limited customer-supplied columns.
 -- Staff updates are further restricted to status and the customer-visible response.
