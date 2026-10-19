@@ -175,6 +175,14 @@
       "category": "Privacy",
       "path": "posts/2026/10/review-app-permissions-47b54a5b.html",
       "content_hash": "318d7112eae51044be54e992028dbb44bf7e0a13af49cf88bcd5538dd7a87173"
+    },
+    {
+      "date": "2026-10-19",
+      "topic": "Be careful with public Wi-Fi",
+      "title": "Small step, stronger security: Be careful with public Wi-Fi",
+      "category": "Safe Browsing",
+      "path": "posts/2026/10/be-careful-with-public-wi-fi-444f3013.html",
+      "content_hash": "6aefa16873430c4e7a7b2eb743a1f1468c74986d61d185102e21f293c7d539d2"
     }
   ],
   "daily_counts": {
@@ -184,6 +192,6 @@
     "2026-10-16": 3,
     "2026-10-17": 4,
     "2026-10-18": 5,
-    "2026-10-19": 1
+    "2026-10-19": 2
   }
 }
