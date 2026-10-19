@@ -59,15 +59,7 @@ $('authForm').addEventListener('submit', async event => {
       const { data: aal, error: aalError } = await supabase.auth.mfa.getAuthenticatorAssuranceLevel();
       if (aalError) throw aalError;
       if (aal?.nextLevel === 'aal2' && aal?.currentLevel !== 'aal2') {
-        const { data: factors, error: factorsError } = await supabase.auth.mfa.listFactors();
-        if (factorsError) throw factorsError;
-        const verified = (factors?.totp || []).find(f => f.status === 'verified');
-        if (!verified) throw new Error('This account requires MFA but has no verified authenticator factor. Contact support.');
-        pendingMfaFactorId = verified.id;
-        $('authForm').hidden = true;
-        $('mfaForm').hidden = false;
-        $('mfaCode').focus();
-        showMessage('Enter the current code from your authenticator app to finish signing in.');
+        await showMfaChallenge('Enter the current code from your authenticator app to finish signing in.');
       } else {
         await handleSignedIn(data.user);
       }
@@ -101,6 +93,20 @@ $('mfaForm').addEventListener('submit', async event => {
     setBusy(button, false);
   }
 });
+
+async function showMfaChallenge(message = 'Enter the current code from your authenticator app to continue.') {
+  const { data: factors, error } = await supabase.auth.mfa.listFactors();
+  if (error) throw error;
+  const verified = (factors?.totp || []).find(f => f.status === 'verified');
+  if (!verified) throw new Error('This account requires MFA but has no verified authenticator factor. Contact support.');
+  pendingMfaFactorId = verified.id;
+  $('workspace').hidden = true;
+  $('authPanel').hidden = false;
+  $('authForm').hidden = true;
+  $('mfaForm').hidden = false;
+  $('mfaCode').focus();
+  showMessage(message);
+}
 
 async function handleSignedIn(user) {
   currentUser = user;
@@ -212,7 +218,11 @@ if (supabase) {
     if (data.session?.user) {
       const { data: aal } = await supabase.auth.mfa.getAuthenticatorAssuranceLevel();
       if (aal?.nextLevel === 'aal2' && aal?.currentLevel !== 'aal2') {
-        showMessage('Your session needs authenticator verification. Please sign out and sign in again to complete the MFA challenge.', 'warning');
+        try {
+          await showMfaChallenge('Your staff session needs authenticator verification. Enter your current six-digit code to continue.');
+        } catch (mfaError) {
+          showMessage(mfaError.message || 'Unable to start MFA verification. Please sign in again.', 'warning');
+        }
       } else {
         await handleSignedIn(data.session.user);
       }
