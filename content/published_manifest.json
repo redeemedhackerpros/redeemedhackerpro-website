@@ -199,6 +199,14 @@
       "category": "Network Security",
       "path": "posts/2026/10/secure-your-home-router-4de30011.html",
       "content_hash": "05f28503983c5fc09ec9a81c3470f36651a33e2fb0ed0e6e906960d34ca67e65"
+    },
+    {
+      "date": "2026-10-20",
+      "topic": "Review app permissions",
+      "title": "Quick security tip: Review app permissions",
+      "category": "Privacy",
+      "path": "posts/2026/10/review-app-permissions-16f4a957.html",
+      "content_hash": "947a090a58e627e954ff59d75f86251d2c538d6f91362380d3155d2f6fbba9b2"
     }
   ],
   "daily_counts": {
@@ -209,6 +217,6 @@
     "2026-10-17": 4,
     "2026-10-18": 5,
     "2026-10-19": 3,
-    "2026-10-20": 1
+    "2026-10-20": 2
   }
 }
