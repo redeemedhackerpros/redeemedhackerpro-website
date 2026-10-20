@@ -207,6 +207,14 @@
       "category": "Privacy",
       "path": "posts/2026/10/review-app-permissions-16f4a957.html",
       "content_hash": "947a090a58e627e954ff59d75f86251d2c538d6f91362380d3155d2f6fbba9b2"
+    },
+    {
+      "date": "2026-10-20",
+      "topic": "Back up important files",
+      "title": "Small step, stronger security: Back up important files",
+      "category": "Data Protection",
+      "path": "posts/2026/10/back-up-important-files-36769e7b.html",
+      "content_hash": "cbc3c58286077247aa7db092910fb63f68caae4ab350f0a7fac38d19aff34571"
     }
   ],
   "daily_counts": {
@@ -217,6 +225,6 @@
     "2026-10-17": 4,
     "2026-10-18": 5,
     "2026-10-19": 3,
-    "2026-10-20": 2
+    "2026-10-20": 3
   }
 }
