@@ -231,6 +231,14 @@
       "category": "Network Security",
       "path": "posts/2026/10/secure-your-home-router-6cf94836.html",
       "content_hash": "0c26dc958af924e874019d4f4704b992f7f9b1dd9863dbc22dc7f5e3cbda17ae"
+    },
+    {
+      "date": "2026-10-21",
+      "topic": "Verify unexpected attachments",
+      "title": "Quick security tip: Verify unexpected attachments",
+      "category": "Scam Awareness",
+      "path": "posts/2026/10/verify-unexpected-attachments-27db9dcf.html",
+      "content_hash": "61b0116daf6f1d113ebb89c409edc221cca32550f14ea4873711384e82ed4061"
     }
   ],
   "daily_counts": {
@@ -242,6 +250,6 @@
     "2026-10-18": 5,
     "2026-10-19": 3,
     "2026-10-20": 3,
-    "2026-10-21": 2
+    "2026-10-21": 3
   }
 }
