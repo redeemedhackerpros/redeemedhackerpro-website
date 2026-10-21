@@ -223,6 +223,14 @@
       "category": "Account Security",
       "path": "posts/2026/10/do-not-reuse-work-passwords-ac5b0283.html",
       "content_hash": "715aadf14bd155a99fa5f07c0eef8690c63e148a0e652ded1a7f44b772e331f2"
+    },
+    {
+      "date": "2026-10-21",
+      "topic": "Secure your home router",
+      "title": "Security habit to try: Secure your home router",
+      "category": "Network Security",
+      "path": "posts/2026/10/secure-your-home-router-6cf94836.html",
+      "content_hash": "0c26dc958af924e874019d4f4704b992f7f9b1dd9863dbc22dc7f5e3cbda17ae"
     }
   ],
   "daily_counts": {
@@ -234,6 +242,6 @@
     "2026-10-18": 5,
     "2026-10-19": 3,
     "2026-10-20": 3,
-    "2026-10-21": 1
+    "2026-10-21": 2
   }
 }
