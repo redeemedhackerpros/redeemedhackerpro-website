@@ -215,6 +215,14 @@
       "category": "Data Protection",
       "path": "posts/2026/10/back-up-important-files-36769e7b.html",
       "content_hash": "cbc3c58286077247aa7db092910fb63f68caae4ab350f0a7fac38d19aff34571"
+    },
+    {
+      "date": "2026-10-21",
+      "topic": "Do not reuse work passwords",
+      "title": "Security habit to try: Do not reuse work passwords",
+      "category": "Account Security",
+      "path": "posts/2026/10/do-not-reuse-work-passwords-ac5b0283.html",
+      "content_hash": "715aadf14bd155a99fa5f07c0eef8690c63e148a0e652ded1a7f44b772e331f2"
     }
   ],
   "daily_counts": {
@@ -225,6 +233,7 @@
     "2026-10-17": 4,
     "2026-10-18": 5,
     "2026-10-19": 3,
-    "2026-10-20": 3
+    "2026-10-20": 3,
+    "2026-10-21": 1
   }
 }
