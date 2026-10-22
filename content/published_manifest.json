@@ -247,6 +247,14 @@
       "category": "Scam Awareness",
       "path": "posts/2026/10/verify-unexpected-attachments-3d42b3eb.html",
       "content_hash": "64998bc106d9116ade74c5314304ca3acc731e54c39dde29f6d29a3de40f5bcc"
+    },
+    {
+      "date": "2026-10-22",
+      "topic": "Do not reuse work passwords",
+      "title": "Cybersecurity reminder: Do not reuse work passwords",
+      "category": "Account Security",
+      "path": "posts/2026/10/do-not-reuse-work-passwords-f1911f00.html",
+      "content_hash": "44eddf362309e505c412d8bfba69f3ad54e0765c1c36d23d33d5b3c8f8a4d316"
     }
   ],
   "daily_counts": {
@@ -259,6 +267,6 @@
     "2026-10-19": 3,
     "2026-10-20": 3,
     "2026-10-21": 3,
-    "2026-10-22": 1
+    "2026-10-22": 2
   }
 }
