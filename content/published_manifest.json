@@ -239,6 +239,14 @@
       "category": "Scam Awareness",
       "path": "posts/2026/10/verify-unexpected-attachments-27db9dcf.html",
       "content_hash": "61b0116daf6f1d113ebb89c409edc221cca32550f14ea4873711384e82ed4061"
+    },
+    {
+      "date": "2026-10-22",
+      "topic": "Verify unexpected attachments",
+      "title": "Cybersecurity reminder: Verify unexpected attachments",
+      "category": "Scam Awareness",
+      "path": "posts/2026/10/verify-unexpected-attachments-3d42b3eb.html",
+      "content_hash": "64998bc106d9116ade74c5314304ca3acc731e54c39dde29f6d29a3de40f5bcc"
     }
   ],
   "daily_counts": {
@@ -250,6 +258,7 @@
     "2026-10-18": 5,
     "2026-10-19": 3,
     "2026-10-20": 3,
-    "2026-10-21": 3
+    "2026-10-21": 3,
+    "2026-10-22": 1
   }
 }
