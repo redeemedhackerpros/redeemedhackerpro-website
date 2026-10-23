@@ -271,6 +271,14 @@
       "category": "Account Security",
       "path": "posts/2026/10/keep-recovery-details-current-f072c91a.html",
       "content_hash": "b43d04e6935b42922035b6eff03459c8ff83eca44ee1e94e3ba81aa4841c6883"
+    },
+    {
+      "date": "2026-10-23",
+      "topic": "Verify unexpected attachments",
+      "title": "Small step, stronger security: Verify unexpected attachments",
+      "category": "Scam Awareness",
+      "path": "posts/2026/10/verify-unexpected-attachments-c9a7f59b.html",
+      "content_hash": "ee4856e10d746db9446d3449d9ff10a04e22d9d865645f1976ba91e7d76c6769"
     }
   ],
   "daily_counts": {
@@ -284,6 +292,6 @@
     "2026-10-20": 3,
     "2026-10-21": 3,
     "2026-10-22": 3,
-    "2026-10-23": 1
+    "2026-10-23": 2
   }
 }
