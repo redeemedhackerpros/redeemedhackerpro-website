@@ -263,6 +263,14 @@
       "category": "Network Security",
       "path": "posts/2026/10/secure-your-home-router-c5142b71.html",
       "content_hash": "aa4e2994c55ee2048eac9cea594d9290b61419d6423cbafb8143b81c9e9adf5c"
+    },
+    {
+      "date": "2026-10-23",
+      "topic": "Keep recovery details current",
+      "title": "Small step, stronger security: Keep recovery details current",
+      "category": "Account Security",
+      "path": "posts/2026/10/keep-recovery-details-current-f072c91a.html",
+      "content_hash": "b43d04e6935b42922035b6eff03459c8ff83eca44ee1e94e3ba81aa4841c6883"
     }
   ],
   "daily_counts": {
@@ -275,6 +283,7 @@
     "2026-10-19": 3,
     "2026-10-20": 3,
     "2026-10-21": 3,
-    "2026-10-22": 3
+    "2026-10-22": 3,
+    "2026-10-23": 1
   }
 }
