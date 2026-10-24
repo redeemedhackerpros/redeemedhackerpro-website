@@ -303,6 +303,14 @@
       "category": "Account Security",
       "path": "posts/2026/10/keep-recovery-details-current-5897a049.html",
       "content_hash": "13c6d3223828850f8fb0a2ff4d6b8d007b78727680b6ecd044fac01f0749e57b"
+    },
+    {
+      "date": "2026-10-24",
+      "topic": "Use least privilege",
+      "title": "Small step, stronger security: Use least privilege",
+      "category": "Security Basics",
+      "path": "posts/2026/10/use-least-privilege-df55e455.html",
+      "content_hash": "e395b7613abc50cff1c62dac22d65663827ee37287947db47e75d6bfe5c7eb48"
     }
   ],
   "daily_counts": {
@@ -317,6 +325,6 @@
     "2026-10-21": 3,
     "2026-10-22": 3,
     "2026-10-23": 3,
-    "2026-10-24": 2
+    "2026-10-24": 3
   }
 }
