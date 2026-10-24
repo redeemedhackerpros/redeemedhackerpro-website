@@ -287,6 +287,14 @@
       "category": "Account Security",
       "path": "posts/2026/10/do-not-reuse-work-passwords-53421ffb.html",
       "content_hash": "990f9d69680cadf2395bdc541e70a626863e3767116bfeaba9f30b9df8684ce1"
+    },
+    {
+      "date": "2026-10-24",
+      "topic": "Lock unattended devices",
+      "title": "Quick security tip: Lock unattended devices",
+      "category": "Device Security",
+      "path": "posts/2026/10/lock-unattended-devices-22969507.html",
+      "content_hash": "86ff29c989a8d7b29a681eda124b21496b2565d5703a62ec5c227dbe73a2a260"
     }
   ],
   "daily_counts": {
@@ -300,6 +308,7 @@
     "2026-10-20": 3,
     "2026-10-21": 3,
     "2026-10-22": 3,
-    "2026-10-23": 3
+    "2026-10-23": 3,
+    "2026-10-24": 1
   }
 }
