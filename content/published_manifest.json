@@ -327,6 +327,14 @@
       "category": "Device Security",
       "path": "posts/2026/10/lock-unattended-devices-441a18cc.html",
       "content_hash": "1520b76485dfe379454ad0b60f9048041a533868b8c847a2ec888a8fa65a9101"
+    },
+    {
+      "date": "2026-10-25",
+      "topic": "Keep recovery details current",
+      "title": "Security habit to try: Keep recovery details current",
+      "category": "Account Security",
+      "path": "posts/2026/10/keep-recovery-details-current-d2bdec0d.html",
+      "content_hash": "23edc258b7f6878bc2e8828cc9d5fcd475fc355c9c8351191b789e49643715eb"
     }
   ],
   "daily_counts": {
@@ -342,6 +350,6 @@
     "2026-10-22": 3,
     "2026-10-23": 3,
     "2026-10-24": 3,
-    "2026-10-25": 2
+    "2026-10-25": 3
   }
 }
