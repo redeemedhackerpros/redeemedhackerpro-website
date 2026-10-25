@@ -319,6 +319,14 @@
       "category": "Security Basics",
       "path": "posts/2026/10/use-least-privilege-0f2ccb65.html",
       "content_hash": "758103daf50a1d5bc206d36b82a1b536082a36722c1645d25df412d5628de77d"
+    },
+    {
+      "date": "2026-10-25",
+      "topic": "Lock unattended devices",
+      "title": "Security habit to try: Lock unattended devices",
+      "category": "Device Security",
+      "path": "posts/2026/10/lock-unattended-devices-441a18cc.html",
+      "content_hash": "1520b76485dfe379454ad0b60f9048041a533868b8c847a2ec888a8fa65a9101"
     }
   ],
   "daily_counts": {
@@ -334,6 +342,6 @@
     "2026-10-22": 3,
     "2026-10-23": 3,
     "2026-10-24": 3,
-    "2026-10-25": 1
+    "2026-10-25": 2
   }
 }
