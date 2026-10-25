@@ -311,6 +311,14 @@
       "category": "Security Basics",
       "path": "posts/2026/10/use-least-privilege-df55e455.html",
       "content_hash": "e395b7613abc50cff1c62dac22d65663827ee37287947db47e75d6bfe5c7eb48"
+    },
+    {
+      "date": "2026-10-25",
+      "topic": "Use least privilege",
+      "title": "Security habit to try: Use least privilege",
+      "category": "Security Basics",
+      "path": "posts/2026/10/use-least-privilege-0f2ccb65.html",
+      "content_hash": "758103daf50a1d5bc206d36b82a1b536082a36722c1645d25df412d5628de77d"
     }
   ],
   "daily_counts": {
@@ -325,6 +333,7 @@
     "2026-10-21": 3,
     "2026-10-22": 3,
     "2026-10-23": 3,
-    "2026-10-24": 3
+    "2026-10-24": 3,
+    "2026-10-25": 1
   }
 }
