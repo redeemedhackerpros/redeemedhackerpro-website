@@ -1,28 +1,21 @@
-Redeemed Hacker Pro sitemap update package
+REDEEMED HACKER PRO — NAVY/CYAN BRAND UPDATE
 
-Files:
-- generate_posts_updated.py: replacement contents for scripts/generate_posts.py
-- short-posts-workflow-updated.yml: replacement workflow contents
+Files included:
+- index.html: existing homepage plus a concise services overview immediately below the navigation.
+- portal.html: existing customer portal markup with branded transparent logo.
+- portal.css: current portal styling refined to the navy/cyan brand and a centered sign-in form.
+- assets/rhp-logo.png: transparent cyan RHP emblem shared by homepage and portal.
 
-What changed:
-- The publishing script regenerates the root sitemap.xml using the homepage, privacy page,
-  terms page, posts index, and every non-index HTML file under posts/.
-- The workflow stages sitemap.xml along with posts and the published manifest.
+IMPORTANT:
+1. Extract this ZIP before uploading. Do not upload the ZIP itself to the site root.
+2. In GitHub, work on the main branch only.
+3. Upload assets/rhp-logo.png into the existing assets folder, replacing the old file at that exact path.
+4. Upload/replace index.html, portal.html, and portal.css in the repository root.
+5. Keep portal.js and supabase-config.js unchanged. The portal's authentication/MFA logic and browser-safe Supabase configuration are intentionally not modified in this visual update. Never upload any service-role key or server secret.
+6. Keep the portal URL as https://redeemedhackerpro.com/portal.html.
+7. After GitHub Pages deploys, hard-refresh both the homepage and portal with Ctrl+F5, then test customer and staff sign-in and staff MFA.
 
-How to apply using GitHub's web interface:
-1. Open the repository redeemedhackerpros/redeemedhackerpro-website.
-2. Open scripts/generate_posts.py, click Edit (pencil), replace all contents with
-   generate_posts_updated.py, then commit the change to main.
-3. Open the existing workflow file under .github/workflows that contains the workflow
-   named "Redeemed Hacker Pro - Short Posts". Edit that existing file and replace its
-   contents with short-posts-workflow-updated.yml, then commit to main.
-   Do not create a second scheduled workflow unless you intentionally want two.
-4. Run the workflow once with limit 1 from the Actions tab. Check the run log.
-5. Confirm https://redeemedhackerpro.com/sitemap.xml now lists the article URLs.
-
-Important:
-- Do not upload this ZIP as a ZIP and expect GitHub to unpack it into the repository.
-  Use the files inside to replace the existing files in GitHub.
-- The sitemap will include all non-index .html files under posts/. If similarly named files
-  are duplicate/obsolete articles, review their canonical tags and content separately later.
-- No DNS, domain, or hosting settings are changed by these files.
+Design decisions:
+- Primary colours: deep navy (#07101f) and cyan (#28c7df), with readable neutral text.
+- Services summary appears directly below the homepage navigation, before the hero content, and describes the four core service areas in short factual language.
+- Existing detailed website content and existing customer portal logic are retained.

@@ -17,18 +17,250 @@
 <link rel="canonical" href="https://redeemedhackerpro.com/">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
+<style id="rhp-two-colour-theme">
+  /* Redeemed Hacker Pro: consistent navy-and-cyan theme. */
+  :root {
+    --rhp-navy: #07101f;
+    --rhp-cyan: #28c7df;
+    --rhp-text: #f4f7fb;
+    --rhp-muted: #c7d2e0;
+    --rhp-border: rgba(40, 199, 223, .38);
+    color-scheme: dark;
+  }
+  html { scroll-behavior: smooth; }
+  body { background: var(--rhp-navy) !important; color: var(--rhp-text) !important; }
+  .topline, .site-header, .hero, .trust-strip, .section, .services-section,
+  .feature-section, .learn-section, .guide-details, .case-section,
+  .values-section, .contact-section, .official-communications, .footer {
+    background-color: var(--rhp-navy) !important;
+    background-image: none !important;
+    color: var(--rhp-text) !important;
+  }
+  .hero-bg { background-color: transparent !important; background-image: none !important; }
+  h1, h2, h3, h4, .brand-name, .case-content h3, .learn-body h3, .service-card h3 {
+    color: var(--rhp-text) !important;
+  }
+  p, li, label, .muted, .hero-lead, .small-note, .case-content p,
+  .learn-body p, .service-card p, .values-copy, .process-item p,
+  .form-note, .footer-bottom, .hint { color: var(--rhp-muted) !important; }
+  em, .eyebrow, .topline a, .nav-links a:not(.nav-cta), .footer-links a, .text-link, .learn-arrow,
+  .brand-name b, .brand-mark, .brand-mark span, .service-number, .service-icon,
+  .strip-num, .case-id, .guide-kicker, .read-time, .learn-tag, .case-mark,
+  .contact-detail > span, .contact-detail small, .form-top, .frame-label,
+  .hero-bottom, .hero-index, .hero-index span { color: var(--rhp-cyan) !important; }
+  a { text-decoration-color: var(--rhp-cyan); }
+  .nav-links a:hover, .footer-links a:hover, .text-link:hover, .learn-arrow:hover {
+    color: var(--rhp-text) !important;
+  }
+  .brand-mark { border-color: var(--rhp-cyan) !important; }
+  .service-card, .learn-card, .case-card, .contact-form, .floating-card,
+  .guide-article, .contact-detail, .trust-grid > div {
+    background-color: var(--rhp-navy) !important;
+    border-color: var(--rhp-border) !important;
+    box-shadow: none !important;
+  }
+  .service-card.featured { border-color: var(--rhp-cyan) !important; }
+  .btn-primary, .nav-cta, .form-submit {
+    background: var(--rhp-cyan) !important;
+    color: var(--rhp-navy) !important;
+    border-color: var(--rhp-cyan) !important;
+  }
+  .btn-primary *, .nav-cta *, .form-submit * { color: var(--rhp-navy) !important; }
+  .nav-links .nav-cta { color: var(--rhp-navy) !important; }
+  .btn-ghost { background: transparent !important; color: var(--rhp-cyan) !important; border-color: var(--rhp-cyan) !important; }
+  input, select, textarea {
+    background: var(--rhp-navy) !important;
+    color: var(--rhp-text) !important;
+    border-color: var(--rhp-border) !important;
+  }
+  input::placeholder, textarea::placeholder { color: var(--rhp-muted) !important; opacity: .8; }
+  .image-overlay { background: linear-gradient(180deg, transparent, rgba(7, 16, 31, .55)) !important; }
+  .hero-visual img, .feature-image img, .learn-image img, .guide-side-image {
+    filter: grayscale(100%);
+  }
+  .pulse, .live-dot, .caption-dot, .form-status i { background: var(--rhp-cyan) !important; }
+  ::selection { background: var(--rhp-cyan); color: var(--rhp-navy); }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  /* Transparent RHP logo with the formal wordmark retained beside it. */
+  .rhp-logo {
+    display: block;
+    width: 124px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    flex: 0 0 auto;
+  }
+  .site-header .brand,
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
+    text-decoration: none;
+  }
+  .site-header .brand .rhp-logo { width: 124px; }
+  .footer-brand .rhp-logo { width: 132px; }
+  .brand-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    min-width: 0;
+    line-height: 1.35;
+  }
+  .brand-copy strong {
+    display: block;
+    color: var(--rhp-text) !important;
+    font-size: .94rem;
+    font-weight: 800;
+    letter-spacing: .055em;
+    white-space: nowrap;
+  }
+  .brand-copy strong b {
+    color: var(--rhp-cyan) !important;
+    font-weight: 800;
+  }
+  .brand-copy small {
+    display: block;
+    color: var(--rhp-cyan) !important;
+    font-size: .61rem;
+    font-weight: 650;
+    letter-spacing: .065em;
+    line-height: 1.5;
+    white-space: nowrap;
+  }
+  @media (max-width: 1100px) {
+    .site-header .brand { gap: 10px; }
+    .site-header .brand .rhp-logo { width: 96px; }
+    .brand-copy strong { font-size: .79rem; }
+    .brand-copy small { font-size: .52rem; letter-spacing: .025em; }
+  }
+  @media (max-width: 760px) {
+    .site-header .brand .rhp-logo { width: 82px; }
+    .footer-brand .rhp-logo { width: 105px; }
+    .site-header .brand { gap: 8px; }
+    .brand-copy strong { font-size: .72rem; letter-spacing: .02em; }
+    .brand-copy small { font-size: .49rem; letter-spacing: .01em; white-space: normal; }
+  }
+
+  /* Top-of-page service summary: concise, accessible, and restrained. */
+  .service-overview {
+    background: #0b1728 !important;
+    border-top: 1px solid #1b3045;
+    border-bottom: 1px solid #1b3045;
+  }
+  .service-overview-wrap { padding-top: 25px; padding-bottom: 27px; }
+  .service-overview-heading {
+    display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(260px, .95fr);
+    gap: clamp(20px, 4vw, 56px); align-items: end; margin-bottom: 18px;
+  }
+  .service-overview-heading .eyebrow { margin-bottom: 8px; }
+  .service-overview-heading h2 {
+    max-width: 650px; margin: 0; color: var(--rhp-text) !important;
+    font-size: clamp(1.35rem, 2.2vw, 1.9rem); line-height: 1.22; letter-spacing: -.025em;
+  }
+  .service-overview-heading > p {
+    max-width: 560px; margin: 0; color: var(--rhp-muted) !important;
+    font-size: .92rem; line-height: 1.6;
+  }
+  .service-summary-grid {
+    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px;
+  }
+  .service-summary-card {
+    display: flex; flex-direction: column; align-items: flex-start; gap: 5px;
+    min-width: 0; min-height: 128px; padding: 14px 15px 13px;
+    background: #07101f !important; border: 1px solid #24394d;
+    border-top: 2px solid var(--rhp-cyan); border-radius: 3px;
+    text-decoration: none !important; box-shadow: none !important;
+    transition: border-color .15s ease, background-color .15s ease;
+  }
+  .service-summary-card:hover { background: #0f2134 !important; border-color: var(--rhp-cyan); }
+  .service-summary-number { color: var(--rhp-cyan); font: 700 .72rem/1.2 ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .08em; }
+  .service-summary-card h3 { margin: 2px 0 1px; color: var(--rhp-text) !important; font-size: .98rem; line-height: 1.35; letter-spacing: -.01em; }
+  .service-summary-card p { margin: 0; color: var(--rhp-muted) !important; font-size: .82rem; line-height: 1.5; }
+  /* Keep the existing hero visual visible and naturally cropped. */
+  .image-frame { overflow: hidden; }
+  .image-frame > img { display: block !important; width: 100%; height: 100%; object-fit: cover; opacity: 1 !important; visibility: visible !important; }
+  .hero-visual img, .feature-image img, .learn-image img, .guide-side-image { filter: grayscale(70%) contrast(1.04); }
+  /* The symbol stays transparent; the formal agency wording remains editable text beside it. */
+  .rhp-logo { background: transparent !important; mix-blend-mode: normal; }
+  @media (max-width: 1000px) {
+    .service-summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .service-overview-heading { grid-template-columns: 1fr; gap: 10px; }
+  }
+  @media (max-width: 560px) {
+    .service-summary-grid { grid-template-columns: 1fr; gap: 9px; }
+    .service-summary-card { min-height: unset; }
+    .service-overview-wrap { padding-top: 22px; padding-bottom: 22px; }
+    .brand-copy strong { white-space: normal; }
+  }
+</style>
+
 </head>
 <body>
 <div class="topline"><div class="wrap top-inner"><span><i class="pulse"></i> DIGITAL SECURITY • EDUCATION • INVESTIGATION AWARENESS</span><a href="#contact">Request an initial assessment <span aria-hidden="true">↗</span></a></div></div>
 <header class="site-header">
   <div class="wrap nav-wrap">
-    <a class="brand" href="index.html" aria-label="Redeemed Hacker Pro home"><span class="brand-mark">R<span>H</span>P</span><span class="brand-name">REDEEMED <b>HACKER PRO</b><small>SECURITY • RESEARCH • EDUCATION</small></span></a>
+    <a class="brand" href="index.html" aria-label="Redeemed Hacker Pro home">
+      <img class="rhp-logo" src="assets/rhp-logo.png" alt="RHP winged cybersecurity emblem in navy and cyan" width="1400" height="654" fetchpriority="high">
+      <span class="brand-copy">
+        <strong>REDEEMED <b>HACKER PRO</b></strong>
+        <small>INTELLIGENT CYBER SECURITY AGENCY</small>
+      </span>
+    </a>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
     <nav class="nav-links" aria-label="Main navigation">
-      <a href="#services">Services</a><a href="#approach">Our approach</a><a href="#learn">Learning hub</a><a href="#cases">Case studies</a><a class="nav-cta" href="#contact">Contact us <span>↗</span></a>
+      <a href="#services">Services</a>
+      <a href="#approach">Our approach</a>
+      <a href="#learn">Learning hub</a>
+      <a href="#cases">Case studies</a>
+      <a href="https://redeemedhackerpro.com/portal.html">Customer Case Portal</a>
+      <a class="nav-cta" href="#contact">Contact us <span>↗</span></a>
     </nav>
   </div>
 </header>
+
+<section class="service-overview" aria-labelledby="service-overview-title">
+  <div class="wrap service-overview-wrap">
+    <div class="service-overview-heading">
+      <div>
+        <p class="eyebrow"><span class="eyebrow-line"></span> OUR SERVICES</p>
+        <h2 id="service-overview-title">Practical digital-security guidance, clearly explained.</h2>
+      </div>
+      <p>Clear information to help people understand digital risks, protect accounts, and choose sensible next steps. We explain evidence and limitations without promising guaranteed outcomes.</p>
+    </div>
+    <div class="service-summary-grid">
+      <a class="service-summary-card" href="#services">
+        <span class="service-summary-number">01</span>
+        <h3>Crypto transaction education</h3>
+        <p>Understand transaction records, wallet addresses, and what public data can—and cannot—show.</p>
+      </a>
+      <a class="service-summary-card" href="#services">
+        <span class="service-summary-number">02</span>
+        <h3>Wallet & account security</h3>
+        <p>Improve sign-in protection, device safety, authentication, and recovery settings.</p>
+      </a>
+      <a class="service-summary-card" href="#services">
+        <span class="service-summary-number">03</span>
+        <h3>Scam & impersonation awareness</h3>
+        <p>Recognise phishing, fake support agents, romance scams, and fraudulent investment offers.</p>
+      </a>
+      <a class="service-summary-card" href="#services">
+        <span class="service-summary-number">04</span>
+        <h3>Digital safety training</h3>
+        <p>Learn practical privacy, multi-factor authentication, safer browsing, and incident-response habits.</p>
+      </a>
+    </div>
+  </div>
+</section>
 <main>
 <section class="hero">
   <div class="hero-bg"></div>
@@ -118,8 +350,8 @@
 <section class="values-section"><div class="wrap values-grid"><div><div class="eyebrow"><span class="eyebrow-line"></span> OUR COMMITMENT</div><h2>Trust is built with<br><em>transparency.</em></h2></div><div class="values-copy"><p>Redeemed Hacker Pro is committed to clear communication, responsible digital-safety guidance, and transparent service limitations. We encourage customers to verify information independently and never share passwords, private keys, or wallet recovery phrases. We do not promise guaranteed financial recovery.</p><div class="value-pills"><span>Ethical practice</span><span>Privacy-conscious</span><span>Clear scope & fees</span><span>No guaranteed outcomes</span><span>Evidence-led learning</span></div></div></div></section>
 
 <section class="contact-section" id="contact"><div class="wrap contact-grid">
- 
 <div class="contact-detail"><span>✉</span><div><small>CLIENT SUPPORT</small><b><a href="mailto:support@redeemedhackerpro.com">support@redeemedhackerpro.com</a></b></div></div>
+<div class="contact-detail"><span>↗</span><div><small>EXISTING CUSTOMERS</small><b><a href="https://redeemedhackerpro.com/portal.html">Submit or Track a Case</a></b></div></div>
  <form class="contact-form" id="contactForm"><div class="form-top"><span>CONTACT FORM</span><span class="form-status"><i></i> SAFE FIRST CONTACT</span></div><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required placeholder="How should we address you?"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="you@example.com"><label for="topic">What do you need help understanding?</label><select id="topic" name="topic" required><option value="">Choose a topic</option><option>Crypto scam awareness</option><option>Wallet or account security</option><option>Transaction record education</option><option>Romance or impersonation scam</option><option>Digital safety training</option><option>Other general enquiry</option></select><label for="message">Brief description <span>(no secrets or passwords)</span></label><textarea id="message" name="message" rows="5" required placeholder="Share a general outline only. Do not include wallet secrets or private personal data."></textarea><button class="btn btn-primary form-submit" type="submit">Prepare enquiry <span>↗</span></button><p class="form-note">This form prepares an email draft addressed to our support inbox. Your email app must be configured to send it; this website does not send or store submissions.</p><div id="formMessage" class="form-message" role="status"></div></form>
 </div></section>
 </main>
@@ -137,7 +369,13 @@
   </div>
 </section>
 
-<footer class="footer"><div class="wrap footer-top"><a class="brand footer-brand" href="index.html"><span class="brand-mark">R<span>H</span>P</span><span class="brand-name">REDEEMED <b>HACKER PRO</b><small>SECURITY • RESEARCH • EDUCATION</small></span></a><p>Learn more. Verify first. Stay safer online.</p><div class="footer-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="#contact">Contact</a></div></div><div class="wrap footer-bottom"><span>© <span id="year"></span> Redeemed Hacker Pro. All rights reserved.</span><span>Educational information only. Not law enforcement, legal advice, or a guarantee of asset recovery.</span></div></footer>
+<footer class="footer"><div class="wrap footer-top"><a class="brand footer-brand" href="index.html" aria-label="Redeemed Hacker Pro home">
+      <img class="rhp-logo" src="assets/rhp-logo.png" alt="RHP winged cybersecurity emblem in navy and cyan" width="1400" height="654" loading="lazy">
+      <span class="brand-copy">
+        <strong>REDEEMED <b>HACKER PRO</b></strong>
+        <small>INTELLIGENT CYBER SECURITY AGENCY</small>
+      </span>
+    </a><p>Learn more. Verify first. Stay safer online.</p><div class="footer-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="#contact">Contact</a><a href="https://redeemedhackerpro.com/portal.html">Customer Case Portal</a></div></div><div class="wrap footer-bottom"><span>© <span id="year"></span> Redeemed Hacker Pro. All rights reserved.</span><span>Educational information only. Not law enforcement, legal advice, or a guarantee of asset recovery.</span></div></footer>
 <script src="script.js"></script>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">

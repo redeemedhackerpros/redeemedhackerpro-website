@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#07101f">
+  <meta name="description" content="Private customer support workspace for Redeemed Hacker Pro.">
+  <title>Customer Case Portal | Redeemed Hacker Pro</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="portal.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Redeemed Hacker Pro home">
+      <img class="brand-logo" src="assets/rhp-logo.png" alt="RHP winged cybersecurity emblem" width="1400" height="654">
+      <span class="brand-copy">
+        <strong>REDEEMED <b>HACKER PRO</b></strong>
+        <small>INTELLIGENT CYBER SECURITY AGENCY</small>
+        <small class="brand-context">CUSTOMER CASE PORTAL</small>
+      </span>
+    </a>
+    <a class="back-link" href="index.html">← Main website</a>
+  </header>
+  <main class="shell">
+    <section class="intro">
+      <p class="eyebrow">PRIVATE SUPPORT WORKSPACE</p>
+      <h1>Customer <em>case portal</em></h1>
+      <p>Sign in to submit an enquiry and follow its progress. Please never include passwords, authentication codes, private keys, or recovery phrases in a case message.</p>
+    </section>
+
+    <div id="configWarning" class="notice warning" hidden>Portal setup is not finished: add your Supabase publishable (or anon) key in <code>supabase-config.js</code> before testing.</div>
+    <div id="message" class="notice" role="status" aria-live="polite" hidden></div>
+
+    <section id="authPanel" class="panel auth-panel">
+      <div class="panel-heading"><div><p class="eyebrow">ACCOUNT ACCESS</p><h2>Welcome</h2></div></div>
+      <div class="tabs" role="tablist" aria-label="Account action">
+        <button type="button" class="tab active" data-auth-mode="signin">Sign in</button>
+        <button type="button" class="tab" data-auth-mode="signup">Create account</button>
+      </div>
+      <form id="authForm">
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" minlength="8" autocomplete="current-password" required>
+        <button id="authSubmit" class="button primary" type="submit">Sign in</button>
+        <p class="hint">Use an email address you can access. Email confirmation may be required before your first sign-in.</p>
+      </form>
+      <form id="mfaForm" hidden>
+        <h3>Verify your authenticator</h3>
+        <p>Your account has an authenticator factor. Enter the current six-digit code from your authenticator app to continue.</p>
+        <label for="mfaCode">Authenticator code</label>
+        <input id="mfaCode" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" required>
+        <button class="button primary" type="submit">Verify and continue</button>
+      </form>
+    </section>
+
+    <section id="workspace" hidden>
+      <div class="workspace-heading">
+        <div><p class="eyebrow">YOUR WORKSPACE</p><h2 id="workspaceTitle">Your cases</h2><p id="signedInAs" class="hint"></p></div>
+        <button id="signOut" type="button" class="button secondary">Sign out</button>
+      </div>
+      <section id="newCasePanel" class="panel">
+        <p class="eyebrow">NEW ENQUIRY</p><h3>Tell us how we can help</h3>
+        <form id="caseForm">
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" maxlength="120" required>
+          <label for="category">Category</label>
+          <select id="category" name="category" required>
+            <option value="">Choose a category</option>
+            <option value="Crypto transaction education">Crypto transaction education</option>
+            <option value="Wallet or account security">Wallet or account security</option>
+            <option value="Scam or impersonation awareness">Scam or impersonation awareness</option>
+            <option value="Digital safety training">Digital safety training</option>
+            <option value="Other enquiry">Other enquiry</option>
+          </select>
+          <label for="caseMessage">Message</label>
+          <textarea id="caseMessage" name="message" rows="5" maxlength="5000" required placeholder="Describe your question. Do not include secrets or sensitive login details."></textarea>
+          <button class="button primary" type="submit">Submit enquiry</button>
+        </form>
+      </section>
+      <section class="case-section">
+        <div class="section-title"><div><p class="eyebrow">CASE HISTORY</p><h3>Enquiries and updates</h3></div><button id="refreshCases" type="button" class="button secondary">Refresh</button></div>
+        <div id="casesList" class="cases-list"><p class="empty">Sign in to load your cases.</p></div>
+      </section>
+    </section>
+    <footer><p>Protect your information. We will never need your password, seed phrase, private key, or one-time login code to review an enquiry.</p></footer>
+  </main>
+  <script src="supabase-config.js"></script>
+  <script type="module" src="portal.js"></script>
+</body>
+</html>
