@@ -343,6 +343,14 @@
       "category": "Account Security",
       "path": "posts/2026/10/check-account-sign-in-alerts-09c45463.html",
       "content_hash": "ee0a0544bd19b214925425792a7e65dcd688832b8ae41d3c32d24b8859ef349a"
+    },
+    {
+      "date": "2026-10-26",
+      "topic": "Use least privilege",
+      "title": "Cybersecurity reminder: Use least privilege",
+      "category": "Security Basics",
+      "path": "posts/2026/10/use-least-privilege-3bb3aff6.html",
+      "content_hash": "2281a68aa8d89b95198485592fe4e24ffe75974dfe1fd39bd747ee3677d03938"
     }
   ],
   "daily_counts": {
@@ -359,6 +367,6 @@
     "2026-10-23": 3,
     "2026-10-24": 3,
     "2026-10-25": 3,
-    "2026-10-26": 1
+    "2026-10-26": 2
   }
 }
