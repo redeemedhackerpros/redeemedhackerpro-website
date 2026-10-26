@@ -82,27 +82,72 @@
   ::selection { background: var(--rhp-cyan); color: var(--rhp-navy); }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
-  /* Official RHP logo: use the supplied artwork in a clean white badge. */
+  /* Transparent RHP logo with the original formal brand wording beside it. */
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+    text-decoration: none;
+  }
   .rhp-logo {
     display: block;
-    width: 156px;
+    width: 108px;
     max-width: 100%;
     height: auto;
+    max-height: 76px;
     object-fit: contain;
-    padding: 3px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    background: #ffffff;
-    border: 1px solid rgba(40, 199, 223, .42);
-    border-radius: 7px;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    flex: 0 0 auto;
   }
-  .site-header .brand .rhp-logo { width: 150px; }
-  .footer-brand .rhp-logo { width: 164px; }
-  @media (max-width: 900px) {
-    .site-header .brand .rhp-logo { width: 140px; }
+  .site-header .brand .rhp-logo { width: 108px; }
+  .brand-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    color: var(--rhp-text) !important;
+    font-size: 13px;
+    line-height: 1.35;
+    letter-spacing: .055em;
+    white-space: nowrap;
+  }
+  .brand-name b {
+    color: var(--rhp-cyan) !important;
+    font-weight: 750;
+  }
+  .brand-name small {
+    display: block;
+    margin-top: 2px;
+    color: var(--rhp-muted) !important;
+    font-size: 9px;
+    line-height: 1.4;
+    font-weight: 500;
+    letter-spacing: .12em;
+  }
+  .footer-brand .rhp-logo { width: 112px; }
+  .footer-brand .brand-name { font-size: 12px; }
+  .footer-brand .brand-name small { font-size: 8px; }
+  @media (max-width: 1100px) {
+    .site-header .brand .rhp-logo { width: 94px; }
+    .site-header .brand { gap: 9px; }
+    .site-header .brand-name { font-size: 11px; letter-spacing: .035em; }
+    .site-header .brand-name small { font-size: 8px; letter-spacing: .08em; }
   }
   @media (max-width: 760px) {
-    .site-header .brand .rhp-logo { width: 122px; }
-    .footer-brand .rhp-logo { width: 140px; }
+    .site-header .brand .rhp-logo { width: 72px; max-height: 55px; }
+    .site-header .brand { gap: 7px; }
+    .site-header .brand-name { font-size: 10px; letter-spacing: .01em; white-space: normal; }
+    .site-header .brand-name small { font-size: 7px; letter-spacing: .035em; }
+    .footer-brand .rhp-logo { width: 88px; }
+    .footer-brand .brand-name { font-size: 10px; white-space: normal; }
+    .footer-brand .brand-name small { font-size: 7px; }
   }
 </style>
 
@@ -111,7 +156,10 @@
 <div class="topline"><div class="wrap top-inner"><span><i class="pulse"></i> DIGITAL SECURITY • EDUCATION • INVESTIGATION AWARENESS</span><a href="#contact">Request an initial assessment <span aria-hidden="true">↗</span></a></div></div>
 <header class="site-header">
   <div class="wrap nav-wrap">
-    <a class="brand" href="index.html" aria-label="Redeemed Hacker Pro home"><img class="rhp-logo" src="assets/rhp-logo.png" alt="Redeemed Hacker Pro — Intelligent Cyber Security Agency" width="460" height="264" fetchpriority="high"></a>
+    <a class="brand" href="index.html" aria-label="Redeemed Hacker Pro home">
+      <img class="rhp-logo" src="assets/rhp-logo.png" alt="RHP winged cybersecurity emblem" width="460" height="264" fetchpriority="high">
+      <span class="brand-name">REDEEMED <b>HACKER PRO</b><small>SECURITY • RESEARCH • EDUCATION</small></span>
+    </a>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
     <nav class="nav-links" aria-label="Main navigation">
       <a href="#services">Services</a>
@@ -231,7 +279,10 @@
   </div>
 </section>
 
-<footer class="footer"><div class="wrap footer-top"><a class="brand footer-brand" href="index.html" aria-label="Redeemed Hacker Pro home"><img class="rhp-logo" src="assets/rhp-logo.png" alt="Redeemed Hacker Pro — Intelligent Cyber Security Agency" width="460" height="264" loading="lazy"></a><p>Learn more. Verify first. Stay safer online.</p><div class="footer-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="#contact">Contact</a><a href="https://redeemedhackerpro.com/portal.html">Customer Case Portal</a></div></div><div class="wrap footer-bottom"><span>© <span id="year"></span> Redeemed Hacker Pro. All rights reserved.</span><span>Educational information only. Not law enforcement, legal advice, or a guarantee of asset recovery.</span></div></footer>
+<footer class="footer"><div class="wrap footer-top"><a class="brand footer-brand" href="index.html" aria-label="Redeemed Hacker Pro home">
+  <img class="rhp-logo" src="assets/rhp-logo.png" alt="RHP winged cybersecurity emblem" width="460" height="264" loading="lazy">
+  <span class="brand-name">REDEEMED <b>HACKER PRO</b><small>SECURITY • RESEARCH • EDUCATION</small></span>
+</a><p>Learn more. Verify first. Stay safer online.</p><div class="footer-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="#contact">Contact</a><a href="https://redeemedhackerpro.com/portal.html">Customer Case Portal</a></div></div><div class="wrap footer-bottom"><span>© <span id="year"></span> Redeemed Hacker Pro. All rights reserved.</span><span>Educational information only. Not law enforcement, legal advice, or a guarantee of asset recovery.</span></div></footer>
 <script src="script.js"></script>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
