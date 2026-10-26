@@ -335,6 +335,14 @@
       "category": "Account Security",
       "path": "posts/2026/10/keep-recovery-details-current-d2bdec0d.html",
       "content_hash": "23edc258b7f6878bc2e8828cc9d5fcd475fc355c9c8351191b789e49643715eb"
+    },
+    {
+      "date": "2026-10-26",
+      "topic": "Check account sign-in alerts",
+      "title": "Cybersecurity reminder: Check account sign-in alerts",
+      "category": "Account Security",
+      "path": "posts/2026/10/check-account-sign-in-alerts-09c45463.html",
+      "content_hash": "ee0a0544bd19b214925425792a7e65dcd688832b8ae41d3c32d24b8859ef349a"
     }
   ],
   "daily_counts": {
@@ -350,6 +358,7 @@
     "2026-10-22": 3,
     "2026-10-23": 3,
     "2026-10-24": 3,
-    "2026-10-25": 3
+    "2026-10-25": 3,
+    "2026-10-26": 1
   }
 }
