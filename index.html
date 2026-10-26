@@ -82,20 +82,12 @@
   ::selection { background: var(--rhp-cyan); color: var(--rhp-navy); }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
-  /* Transparent RHP logo with the original formal brand wording beside it. */
-  .brand {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-    min-width: 0;
-    text-decoration: none;
-  }
+  /* Transparent RHP logo with the formal wordmark retained beside it. */
   .rhp-logo {
     display: block;
-    width: 108px;
+    width: 124px;
     max-width: 100%;
     height: auto;
-    max-height: 76px;
     object-fit: contain;
     padding: 0;
     margin: 0;
@@ -106,48 +98,109 @@
     box-shadow: none !important;
     flex: 0 0 auto;
   }
-  .site-header .brand .rhp-logo { width: 108px; }
-  .brand-name {
+  .site-header .brand,
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
+    text-decoration: none;
+  }
+  .site-header .brand .rhp-logo { width: 124px; }
+  .footer-brand .rhp-logo { width: 132px; }
+  .brand-copy {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 3px;
-    color: var(--rhp-text) !important;
-    font-size: 13px;
+    gap: 5px;
+    min-width: 0;
     line-height: 1.35;
+  }
+  .brand-copy strong {
+    display: block;
+    color: var(--rhp-text) !important;
+    font-size: .94rem;
+    font-weight: 800;
     letter-spacing: .055em;
     white-space: nowrap;
   }
-  .brand-name b {
+  .brand-copy strong b {
     color: var(--rhp-cyan) !important;
-    font-weight: 750;
+    font-weight: 800;
   }
-  .brand-name small {
+  .brand-copy small {
     display: block;
-    margin-top: 2px;
-    color: var(--rhp-muted) !important;
-    font-size: 9px;
-    line-height: 1.4;
-    font-weight: 500;
-    letter-spacing: .12em;
+    color: var(--rhp-cyan) !important;
+    font-size: .61rem;
+    font-weight: 650;
+    letter-spacing: .065em;
+    line-height: 1.5;
+    white-space: nowrap;
   }
-  .footer-brand .rhp-logo { width: 112px; }
-  .footer-brand .brand-name { font-size: 12px; }
-  .footer-brand .brand-name small { font-size: 8px; }
   @media (max-width: 1100px) {
-    .site-header .brand .rhp-logo { width: 94px; }
-    .site-header .brand { gap: 9px; }
-    .site-header .brand-name { font-size: 11px; letter-spacing: .035em; }
-    .site-header .brand-name small { font-size: 8px; letter-spacing: .08em; }
+    .site-header .brand { gap: 10px; }
+    .site-header .brand .rhp-logo { width: 96px; }
+    .brand-copy strong { font-size: .79rem; }
+    .brand-copy small { font-size: .52rem; letter-spacing: .025em; }
   }
   @media (max-width: 760px) {
-    .site-header .brand .rhp-logo { width: 72px; max-height: 55px; }
-    .site-header .brand { gap: 7px; }
-    .site-header .brand-name { font-size: 10px; letter-spacing: .01em; white-space: normal; }
-    .site-header .brand-name small { font-size: 7px; letter-spacing: .035em; }
-    .footer-brand .rhp-logo { width: 88px; }
-    .footer-brand .brand-name { font-size: 10px; white-space: normal; }
-    .footer-brand .brand-name small { font-size: 7px; }
+    .site-header .brand .rhp-logo { width: 82px; }
+    .footer-brand .rhp-logo { width: 105px; }
+    .site-header .brand { gap: 8px; }
+    .brand-copy strong { font-size: .72rem; letter-spacing: .02em; }
+    .brand-copy small { font-size: .49rem; letter-spacing: .01em; white-space: normal; }
+  }
+
+  /* Top-of-page service summary: concise, accessible, and restrained. */
+  .service-overview {
+    background: #0b1728 !important;
+    border-top: 1px solid #1b3045;
+    border-bottom: 1px solid #1b3045;
+  }
+  .service-overview-wrap { padding-top: 25px; padding-bottom: 27px; }
+  .service-overview-heading {
+    display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(260px, .95fr);
+    gap: clamp(20px, 4vw, 56px); align-items: end; margin-bottom: 18px;
+  }
+  .service-overview-heading .eyebrow { margin-bottom: 8px; }
+  .service-overview-heading h2 {
+    max-width: 650px; margin: 0; color: var(--rhp-text) !important;
+    font-size: clamp(1.35rem, 2.2vw, 1.9rem); line-height: 1.22; letter-spacing: -.025em;
+  }
+  .service-overview-heading > p {
+    max-width: 560px; margin: 0; color: var(--rhp-muted) !important;
+    font-size: .92rem; line-height: 1.6;
+  }
+  .service-summary-grid {
+    display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px;
+  }
+  .service-summary-card {
+    display: flex; flex-direction: column; align-items: flex-start; gap: 5px;
+    min-width: 0; min-height: 128px; padding: 14px 15px 13px;
+    background: #07101f !important; border: 1px solid #24394d;
+    border-top: 2px solid var(--rhp-cyan); border-radius: 3px;
+    text-decoration: none !important; box-shadow: none !important;
+    transition: border-color .15s ease, background-color .15s ease;
+  }
+  .service-summary-card:hover { background: #0f2134 !important; border-color: var(--rhp-cyan); }
+  .service-summary-number { color: var(--rhp-cyan); font: 700 .72rem/1.2 ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .08em; }
+  .service-summary-card h3 { margin: 2px 0 1px; color: var(--rhp-text) !important; font-size: .98rem; line-height: 1.35; letter-spacing: -.01em; }
+  .service-summary-card p { margin: 0; color: var(--rhp-muted) !important; font-size: .82rem; line-height: 1.5; }
+  /* Keep the existing hero visual visible and naturally cropped. */
+  .image-frame { overflow: hidden; }
+  .image-frame > img { display: block !important; width: 100%; height: 100%; object-fit: cover; opacity: 1 !important; visibility: visible !important; }
+  .hero-visual img, .feature-image img, .learn-image img, .guide-side-image { filter: grayscale(70%) contrast(1.04); }
+  /* The symbol stays transparent; the formal agency wording remains editable text beside it. */
+  .rhp-logo { background: transparent !important; mix-blend-mode: normal; }
+  @media (max-width: 1000px) {
+    .service-summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .service-overview-heading { grid-template-columns: 1fr; gap: 10px; }
+  }
+  @media (max-width: 560px) {
+    .service-summary-grid { grid-template-columns: 1fr; gap: 9px; }
+    .service-summary-card { min-height: unset; }
+    .service-overview-wrap { padding-top: 22px; padding-bottom: 22px; }
+    .brand-copy strong { white-space: normal; }
   }
 </style>
 
@@ -157,8 +210,11 @@
 <header class="site-header">
   <div class="wrap nav-wrap">
     <a class="brand" href="index.html" aria-label="Redeemed Hacker Pro home">
-      <img class="rhp-logo" src="assets/rhp-logo.png" alt="RHP winged cybersecurity emblem" width="460" height="264" fetchpriority="high">
-      <span class="brand-name">REDEEMED <b>HACKER PRO</b><small>SECURITY • RESEARCH • EDUCATION</small></span>
+      <img class="rhp-logo" src="assets/rhp-logo.png" alt="RHP winged cybersecurity emblem in navy and cyan" width="1400" height="654" fetchpriority="high">
+      <span class="brand-copy">
+        <strong>REDEEMED <b>HACKER PRO</b></strong>
+        <small>INTELLIGENT CYBER SECURITY AGENCY</small>
+      </span>
     </a>
     <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
     <nav class="nav-links" aria-label="Main navigation">
@@ -171,6 +227,40 @@
     </nav>
   </div>
 </header>
+
+<section class="service-overview" aria-labelledby="service-overview-title">
+  <div class="wrap service-overview-wrap">
+    <div class="service-overview-heading">
+      <div>
+        <p class="eyebrow"><span class="eyebrow-line"></span> OUR SERVICES</p>
+        <h2 id="service-overview-title">Practical digital-security guidance, clearly explained.</h2>
+      </div>
+      <p>Clear information to help people understand digital risks, protect accounts, and choose sensible next steps. We explain evidence and limitations without promising guaranteed outcomes.</p>
+    </div>
+    <div class="service-summary-grid">
+      <a class="service-summary-card" href="#services">
+        <span class="service-summary-number">01</span>
+        <h3>Crypto transaction education</h3>
+        <p>Understand transaction records, wallet addresses, and what public data can—and cannot—show.</p>
+      </a>
+      <a class="service-summary-card" href="#services">
+        <span class="service-summary-number">02</span>
+        <h3>Wallet & account security</h3>
+        <p>Improve sign-in protection, device safety, authentication, and recovery settings.</p>
+      </a>
+      <a class="service-summary-card" href="#services">
+        <span class="service-summary-number">03</span>
+        <h3>Scam & impersonation awareness</h3>
+        <p>Recognise phishing, fake support agents, romance scams, and fraudulent investment offers.</p>
+      </a>
+      <a class="service-summary-card" href="#services">
+        <span class="service-summary-number">04</span>
+        <h3>Digital safety training</h3>
+        <p>Learn practical privacy, multi-factor authentication, safer browsing, and incident-response habits.</p>
+      </a>
+    </div>
+  </div>
+</section>
 <main>
 <section class="hero">
   <div class="hero-bg"></div>
@@ -280,9 +370,12 @@
 </section>
 
 <footer class="footer"><div class="wrap footer-top"><a class="brand footer-brand" href="index.html" aria-label="Redeemed Hacker Pro home">
-  <img class="rhp-logo" src="assets/rhp-logo.png" alt="RHP winged cybersecurity emblem" width="460" height="264" loading="lazy">
-  <span class="brand-name">REDEEMED <b>HACKER PRO</b><small>SECURITY • RESEARCH • EDUCATION</small></span>
-</a><p>Learn more. Verify first. Stay safer online.</p><div class="footer-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="#contact">Contact</a><a href="https://redeemedhackerpro.com/portal.html">Customer Case Portal</a></div></div><div class="wrap footer-bottom"><span>© <span id="year"></span> Redeemed Hacker Pro. All rights reserved.</span><span>Educational information only. Not law enforcement, legal advice, or a guarantee of asset recovery.</span></div></footer>
+      <img class="rhp-logo" src="assets/rhp-logo.png" alt="RHP winged cybersecurity emblem in navy and cyan" width="1400" height="654" loading="lazy">
+      <span class="brand-copy">
+        <strong>REDEEMED <b>HACKER PRO</b></strong>
+        <small>INTELLIGENT CYBER SECURITY AGENCY</small>
+      </span>
+    </a><p>Learn more. Verify first. Stay safer online.</p><div class="footer-links"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="#contact">Contact</a><a href="https://redeemedhackerpro.com/portal.html">Customer Case Portal</a></div></div><div class="wrap footer-bottom"><span>© <span id="year"></span> Redeemed Hacker Pro. All rights reserved.</span><span>Educational information only. Not law enforcement, legal advice, or a guarantee of asset recovery.</span></div></footer>
 <script src="script.js"></script>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
