@@ -375,6 +375,14 @@
       "category": "Account Security",
       "path": "posts/2026/10/check-account-sign-in-alerts-7a4a9e14.html",
       "content_hash": "32aad28e6da4cd0feeae1f405423cef2bcfaf5a0d36ae83371dd0a8f697b7edf"
+    },
+    {
+      "date": "2026-10-27",
+      "topic": "Protect sensitive screenshots",
+      "title": "Cybersecurity reminder: Protect sensitive screenshots",
+      "category": "Privacy",
+      "path": "posts/2026/10/protect-sensitive-screenshots-ebe225b1.html",
+      "content_hash": "cb060d76c74973325f060ac204c39bd850cfde0650ad7a398627934d71e531ef"
     }
   ],
   "daily_counts": {
@@ -392,6 +400,6 @@
     "2026-10-24": 3,
     "2026-10-25": 3,
     "2026-10-26": 3,
-    "2026-10-27": 2
+    "2026-10-27": 3
   }
 }
