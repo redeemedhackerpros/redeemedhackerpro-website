@@ -383,6 +383,14 @@
       "category": "Privacy",
       "path": "posts/2026/10/protect-sensitive-screenshots-ebe225b1.html",
       "content_hash": "cb060d76c74973325f060ac204c39bd850cfde0650ad7a398627934d71e531ef"
+    },
+    {
+      "date": "2026-10-28",
+      "topic": "Protect sensitive screenshots",
+      "title": "Quick security tip: Protect sensitive screenshots",
+      "category": "Privacy",
+      "path": "posts/2026/10/protect-sensitive-screenshots-3d69c8e8.html",
+      "content_hash": "bc9099c990857800d01de8cefdbcada98977c9cec3df1b1ecd1de57f4e2fc092"
     }
   ],
   "daily_counts": {
@@ -400,6 +408,7 @@
     "2026-10-24": 3,
     "2026-10-25": 3,
     "2026-10-26": 3,
-    "2026-10-27": 3
+    "2026-10-27": 3,
+    "2026-10-28": 1
   }
 }
