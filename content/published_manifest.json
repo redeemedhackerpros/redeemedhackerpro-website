@@ -399,6 +399,14 @@
       "category": "Device Security",
       "path": "posts/2026/10/avoid-unknown-usb-devices-fa9e6011.html",
       "content_hash": "2539c1339e64ab91955fa853206e8ab943f4b6fb3955424bad7c7614faabda7c"
+    },
+    {
+      "date": "2026-10-28",
+      "topic": "Check account sign-in alerts",
+      "title": "Quick security tip: Check account sign-in alerts",
+      "category": "Account Security",
+      "path": "posts/2026/10/check-account-sign-in-alerts-fbf4464b.html",
+      "content_hash": "02cb79e831282042e1dc6c9611791df8786eccf8fb37a67e8187393d29e50a3e"
     }
   ],
   "daily_counts": {
@@ -417,6 +425,6 @@
     "2026-10-25": 3,
     "2026-10-26": 3,
     "2026-10-27": 3,
-    "2026-10-28": 2
+    "2026-10-28": 3
   }
 }
