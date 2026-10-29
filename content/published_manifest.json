@@ -415,6 +415,14 @@
       "category": "Safe Browsing",
       "path": "posts/2026/10/check-website-security-warnings-03603800.html",
       "content_hash": "2f783494dc1435b52250dde9b2b5e274bf314d8c183d2d1f26c055daae865dd4"
+    },
+    {
+      "date": "2026-10-29",
+      "topic": "Protect sensitive screenshots",
+      "title": "Security habit to try: Protect sensitive screenshots",
+      "category": "Privacy",
+      "path": "posts/2026/10/protect-sensitive-screenshots-0fca23b8.html",
+      "content_hash": "f3e914ad3767970dcdf6c62a0709e7afb1cba47be01a1ee97f85c5655e18e577"
     }
   ],
   "daily_counts": {
@@ -434,6 +442,6 @@
     "2026-10-26": 3,
     "2026-10-27": 3,
     "2026-10-28": 3,
-    "2026-10-29": 1
+    "2026-10-29": 2
   }
 }
