@@ -407,6 +407,14 @@
       "category": "Account Security",
       "path": "posts/2026/10/check-account-sign-in-alerts-fbf4464b.html",
       "content_hash": "02cb79e831282042e1dc6c9611791df8786eccf8fb37a67e8187393d29e50a3e"
+    },
+    {
+      "date": "2026-10-29",
+      "topic": "Check website security warnings",
+      "title": "Security habit to try: Check website security warnings",
+      "category": "Safe Browsing",
+      "path": "posts/2026/10/check-website-security-warnings-03603800.html",
+      "content_hash": "2f783494dc1435b52250dde9b2b5e274bf314d8c183d2d1f26c055daae865dd4"
     }
   ],
   "daily_counts": {
@@ -425,6 +433,7 @@
     "2026-10-25": 3,
     "2026-10-26": 3,
     "2026-10-27": 3,
-    "2026-10-28": 3
+    "2026-10-28": 3,
+    "2026-10-29": 1
   }
 }
