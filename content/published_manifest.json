@@ -423,6 +423,14 @@
       "category": "Privacy",
       "path": "posts/2026/10/protect-sensitive-screenshots-0fca23b8.html",
       "content_hash": "f3e914ad3767970dcdf6c62a0709e7afb1cba47be01a1ee97f85c5655e18e577"
+    },
+    {
+      "date": "2026-10-29",
+      "topic": "Avoid unknown USB devices",
+      "title": "Security habit to try: Avoid unknown USB devices",
+      "category": "Device Security",
+      "path": "posts/2026/10/avoid-unknown-usb-devices-d0a4de4c.html",
+      "content_hash": "b04a78420d0eb21acdbfe47af5e7a5d7bc15f050de04eb09c9c43f9934f0572b"
     }
   ],
   "daily_counts": {
@@ -442,6 +450,6 @@
     "2026-10-26": 3,
     "2026-10-27": 3,
     "2026-10-28": 3,
-    "2026-10-29": 2
+    "2026-10-29": 3
   }
 }
