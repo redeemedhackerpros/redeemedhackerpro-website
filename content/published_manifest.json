@@ -439,6 +439,14 @@
       "category": "Business Security",
       "path": "posts/2026/10/create-an-incident-contact-plan-743fcd38.html",
       "content_hash": "45560929bbfa953f628a398af548c5fa774ddbd319f5ff1c5b2da9581b2b6103"
+    },
+    {
+      "date": "2026-10-30",
+      "topic": "Check website security warnings",
+      "title": "Cybersecurity reminder: Check website security warnings",
+      "category": "Safe Browsing",
+      "path": "posts/2026/10/check-website-security-warnings-5b9bd53f.html",
+      "content_hash": "14f994b6bc3164086f229378780006ec92295e396dcb48031daa01ea720b3c8e"
     }
   ],
   "daily_counts": {
@@ -459,6 +467,6 @@
     "2026-10-27": 3,
     "2026-10-28": 3,
     "2026-10-29": 3,
-    "2026-10-30": 1
+    "2026-10-30": 2
   }
 }
