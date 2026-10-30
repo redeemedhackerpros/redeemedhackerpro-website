@@ -431,6 +431,14 @@
       "category": "Device Security",
       "path": "posts/2026/10/avoid-unknown-usb-devices-d0a4de4c.html",
       "content_hash": "b04a78420d0eb21acdbfe47af5e7a5d7bc15f050de04eb09c9c43f9934f0572b"
+    },
+    {
+      "date": "2026-10-30",
+      "topic": "Create an incident contact plan",
+      "title": "Cybersecurity reminder: Create an incident contact plan",
+      "category": "Business Security",
+      "path": "posts/2026/10/create-an-incident-contact-plan-743fcd38.html",
+      "content_hash": "45560929bbfa953f628a398af548c5fa774ddbd319f5ff1c5b2da9581b2b6103"
     }
   ],
   "daily_counts": {
@@ -450,6 +458,7 @@
     "2026-10-26": 3,
     "2026-10-27": 3,
     "2026-10-28": 3,
-    "2026-10-29": 3
+    "2026-10-29": 3,
+    "2026-10-30": 1
   }
 }
