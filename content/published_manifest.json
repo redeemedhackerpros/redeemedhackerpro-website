@@ -455,6 +455,14 @@
       "category": "Privacy",
       "path": "posts/2026/10/think-before-sharing-security-details-83d286fe.html",
       "content_hash": "12f3c93ce2c116adff09e2cea100b532d791b8930fd0bbf363143e4b19dcc7f5"
+    },
+    {
+      "date": "2026-10-31",
+      "topic": "Think before sharing security details",
+      "title": "Small step, stronger security: Think before sharing security details",
+      "category": "Privacy",
+      "path": "posts/2026/10/think-before-sharing-security-details-607b2884.html",
+      "content_hash": "89da12f260576999a9a4a69d576076b0553c492981d6bb1269d4bc6327f7c744"
     }
   ],
   "daily_counts": {
@@ -475,6 +483,7 @@
     "2026-10-27": 3,
     "2026-10-28": 3,
     "2026-10-29": 3,
-    "2026-10-30": 3
+    "2026-10-30": 3,
+    "2026-10-31": 1
   }
 }
