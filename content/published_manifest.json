@@ -463,6 +463,14 @@
       "category": "Privacy",
       "path": "posts/2026/10/think-before-sharing-security-details-607b2884.html",
       "content_hash": "89da12f260576999a9a4a69d576076b0553c492981d6bb1269d4bc6327f7c744"
+    },
+    {
+      "date": "2026-10-31",
+      "topic": "Create an incident contact plan",
+      "title": "Small step, stronger security: Create an incident contact plan",
+      "category": "Business Security",
+      "path": "posts/2026/10/create-an-incident-contact-plan-7f64f4b8.html",
+      "content_hash": "f2fd12a3b65d4b1422171fa2144c8ae5d2693acc475fe007fcbc8caa29824a4c"
     }
   ],
   "daily_counts": {
@@ -484,6 +492,6 @@
     "2026-10-28": 3,
     "2026-10-29": 3,
     "2026-10-30": 3,
-    "2026-10-31": 1
+    "2026-10-31": 2
   }
 }
