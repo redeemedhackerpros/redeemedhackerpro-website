@@ -487,6 +487,14 @@
       "category": "Scam Awareness",
       "path": "posts/2026/11/check-qr-codes-before-opening-a021fec4.html",
       "content_hash": "fdf9aff0a82a27117fcf8adf74fa65b08ae78ab5b376187c873cff9cc5969721"
+    },
+    {
+      "date": "2026-11-01",
+      "topic": "Think before sharing security details",
+      "title": "Quick security tip: Think before sharing security details",
+      "category": "Privacy",
+      "path": "posts/2026/11/think-before-sharing-security-details-69798022.html",
+      "content_hash": "e1fff6d812f07a5becdcd01f6d3c266e9f860087c2c0c7e582e1d1d0c0858968"
     }
   ],
   "daily_counts": {
@@ -509,6 +517,6 @@
     "2026-10-29": 3,
     "2026-10-30": 3,
     "2026-10-31": 3,
-    "2026-11-01": 1
+    "2026-11-01": 2
   }
 }
