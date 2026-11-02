@@ -503,6 +503,14 @@
       "category": "Business Security",
       "path": "posts/2026/11/create-an-incident-contact-plan-dbae3892.html",
       "content_hash": "1217fc9770aaf5de38537f9eba2bc3a41c80b243484f5d8df5babdf04e6bcceb"
+    },
+    {
+      "date": "2026-11-02",
+      "topic": "Separate personal and work accounts",
+      "title": "Security habit to try: Separate personal and work accounts",
+      "category": "Business Security",
+      "path": "posts/2026/11/separate-personal-and-work-accounts-86abe66e.html",
+      "content_hash": "65026f99f7c423e79415b941243601ed0fdc5ec443e16e31dfdecd16e74d6f6c"
     }
   ],
   "daily_counts": {
@@ -525,6 +533,7 @@
     "2026-10-29": 3,
     "2026-10-30": 3,
     "2026-10-31": 3,
-    "2026-11-01": 3
+    "2026-11-01": 3,
+    "2026-11-02": 1
   }
 }
