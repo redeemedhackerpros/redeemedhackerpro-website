@@ -511,6 +511,14 @@
       "category": "Business Security",
       "path": "posts/2026/11/separate-personal-and-work-accounts-86abe66e.html",
       "content_hash": "65026f99f7c423e79415b941243601ed0fdc5ec443e16e31dfdecd16e74d6f6c"
+    },
+    {
+      "date": "2026-11-02",
+      "topic": "Check QR codes before opening",
+      "title": "Security habit to try: Check QR codes before opening",
+      "category": "Scam Awareness",
+      "path": "posts/2026/11/check-qr-codes-before-opening-a9db0185.html",
+      "content_hash": "ac1ede7f7443b078d8f1b6eed1e851bbbe3fde9ce41b78fe867a69f17224e0a1"
     }
   ],
   "daily_counts": {
@@ -534,6 +542,6 @@
     "2026-10-30": 3,
     "2026-10-31": 3,
     "2026-11-01": 3,
-    "2026-11-02": 1
+    "2026-11-02": 2
   }
 }
