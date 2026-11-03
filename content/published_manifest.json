@@ -527,6 +527,14 @@
       "category": "Privacy",
       "path": "posts/2026/11/review-connected-apps-f8b5a82d.html",
       "content_hash": "24fb180e73dd932b73e4c9f709e64e777eada3932927291c92c3f2206187b940"
+    },
+    {
+      "date": "2026-11-03",
+      "topic": "Review connected apps",
+      "title": "Cybersecurity reminder: Review connected apps",
+      "category": "Privacy",
+      "path": "posts/2026/11/review-connected-apps-50becbee.html",
+      "content_hash": "d3407beeee444160a454f35d1c956ca16fc1c5fef722ab2e374e5d25050b2470"
     }
   ],
   "daily_counts": {
@@ -550,6 +558,7 @@
     "2026-10-30": 3,
     "2026-10-31": 3,
     "2026-11-01": 3,
-    "2026-11-02": 3
+    "2026-11-02": 3,
+    "2026-11-03": 1
   }
 }
