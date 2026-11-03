@@ -535,6 +535,14 @@
       "category": "Privacy",
       "path": "posts/2026/11/review-connected-apps-50becbee.html",
       "content_hash": "d3407beeee444160a454f35d1c956ca16fc1c5fef722ab2e374e5d25050b2470"
+    },
+    {
+      "date": "2026-11-03",
+      "topic": "Separate personal and work accounts",
+      "title": "Cybersecurity reminder: Separate personal and work accounts",
+      "category": "Business Security",
+      "path": "posts/2026/11/separate-personal-and-work-accounts-33c577bf.html",
+      "content_hash": "71cf7e715bb53305dec0ddc71b16bc2e9927b4d8c3db424077a9ac5568ddc9fc"
     }
   ],
   "daily_counts": {
@@ -559,6 +567,6 @@
     "2026-10-31": 3,
     "2026-11-01": 3,
     "2026-11-02": 3,
-    "2026-11-03": 1
+    "2026-11-03": 2
   }
 }
