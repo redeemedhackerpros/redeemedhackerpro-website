@@ -559,6 +559,14 @@
       "category": "Data Protection",
       "path": "posts/2026/11/use-secure-file-sharing-2b8755e7.html",
       "content_hash": "c0acf81714ac59e57d727ccdd31b75148221010ea98348bd3b09ae664fdd0eef"
+    },
+    {
+      "date": "2026-11-04",
+      "topic": "Review connected apps",
+      "title": "Small step, stronger security: Review connected apps",
+      "category": "Privacy",
+      "path": "posts/2026/11/review-connected-apps-1fad0a4e.html",
+      "content_hash": "290abcd56a990630da6ffe8781bd84a977a949cc25702974fb8ec61db6dc8ea2"
     }
   ],
   "daily_counts": {
@@ -584,6 +592,6 @@
     "2026-11-01": 3,
     "2026-11-02": 3,
     "2026-11-03": 3,
-    "2026-11-04": 1
+    "2026-11-04": 2
   }
 }
