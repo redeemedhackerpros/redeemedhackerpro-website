@@ -583,6 +583,14 @@
       "category": "Scam Awareness",
       "path": "posts/2026/11/report-suspected-phishing-d92da9eb.html",
       "content_hash": "36dfa158095ca18b88e9dc71691cba48be24bc4be12f9bcc3a534d3f52b9cbd8"
+    },
+    {
+      "date": "2026-11-05",
+      "topic": "Use secure file sharing",
+      "title": "Quick security tip: Use secure file sharing",
+      "category": "Data Protection",
+      "path": "posts/2026/11/use-secure-file-sharing-5950eff5.html",
+      "content_hash": "6a6345fb779dc51c61d30c4084040e98071a0d6aa343f55cecf6f9cf11179477"
     }
   ],
   "daily_counts": {
@@ -609,6 +617,6 @@
     "2026-11-02": 3,
     "2026-11-03": 3,
     "2026-11-04": 3,
-    "2026-11-05": 1
+    "2026-11-05": 2
   }
 }
