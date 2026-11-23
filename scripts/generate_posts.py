@@ -176,39 +176,47 @@ footer {{
 </html>'''
     (POSTS / 'index.html').write_text(page, encoding='utf-8')
 
+
 def write_sitemap():
-    """Generate sitemap.xml from the published HTML pages in posts/."""
-    site_url = 'https://redeemedhackerpro.com'
-    sitemap_path = ROOT / 'sitemap.xml'
+    """Generate sitemap.xml from site pages and published HTML posts."""
+    site_url = "https://redeemedhackerpro.com"
+    sitemap_path = ROOT / "sitemap.xml"
 
     urls = {
-        '/',
-        '/privacy.html',
-        '/terms.html',
-        '/posts/',
+        "/",
+        "/privacy.html",
+        "/terms.html",
+        "/posts/",
     }
 
-    if POSTS.exists():
-        for f in POSTS.rglob('*.html'):
-            # The posts index is already listed separately as /posts/.
-            if f.name.lower() == 'index.html' or not f.is_file():
-                continue
-            urls.add('/' + f.relative_to(ROOT).as_posix())
+    # Include service pages so future publishing runs do not remove them.
+    services_dir = ROOT / "services"
+    if services_dir.exists():
+        for path in services_dir.rglob("*.html"):
+            if path.is_file():
+                urls.add("/" + path.relative_to(ROOT).as_posix())
 
-    entries = '\n'.join(
-        '  <url>\n'
-        f'    <loc>{html.escape(site_url + path, quote=True)}</loc>\n'
-        '  </url>'
+    # Include published article pages, but not the posts index.
+    if POSTS.exists():
+        for path in POSTS.rglob("*.html"):
+            if path.is_file() and path.name.lower() != "index.html":
+                urls.add("/" + path.relative_to(ROOT).as_posix())
+
+    entries = "\n".join(
+        "  <url>\n"
+        f"    <loc>{html.escape(site_url + path, quote=True)}</loc>\n"
+        "  </url>"
         for path in sorted(urls)
     )
 
     sitemap = (
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
-        f'{entries}\n'
-        '</urlset>\n'
+        f"{entries}\n"
+        "</urlset>\n"
     )
-    sitemap_path.write_text(sitemap, encoding='utf-8')
+
+    sitemap_path.write_text(sitemap, encoding="utf-8")
 
 def main():
     p=argparse.ArgumentParser(); p.add_argument('--limit',type=int,default=5); p.add_argument('--date',help='UTC date YYYY-MM-DD'); a=p.parse_args()
