@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://redeemedhackerpro.com/</loc>
@@ -232,6 +232,18 @@
     <loc>https://redeemedhackerpro.com/privacy.html</loc>
   </url>
   <url>
+    <loc>https://redeemedhackerpro.com/services/crypto-transactions.html</loc>
+  </url>
+  <url>
+    <loc>https://redeemedhackerpro.com/services/scam-awareness.html</loc>
+  </url>
+  <url>
+    <loc>https://redeemedhackerpro.com/services/security-training.html</loc>
+  </url>
+  <url>
+    <loc>https://redeemedhackerpro.com/services/wallet-security.html</loc>
+  </url>
+  <url>
     <loc>https://redeemedhackerpro.com/terms.html</loc>
   </url>
-<url><loc>https://redeemedhackerpro.com/services/crypto-transactions.html</loc></url><url><loc>https://redeemedhackerpro.com/services/wallet-security.html</loc></url><url><loc>https://redeemedhackerpro.com/services/scam-awareness.html</loc></url><url><loc>https://redeemedhackerpro.com/services/security-training.html</loc></url></urlset>
+</urlset>
