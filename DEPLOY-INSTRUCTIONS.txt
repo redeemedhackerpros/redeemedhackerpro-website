@@ -1,0 +1,24 @@
+REDEEMED HACKER PRO — UPDATED WEBSITE PACKAGE
+
+WHAT THIS PACKAGE IS
+This ZIP contains your original GitHub repository with a redesigned homepage, four service pages, updated styling and navigation, and the existing sitemap extended with the service-page URLs.
+
+WHAT WAS PRESERVED
+Your customer portal (portal.html, portal.css, portal.js), Supabase browser configuration (supabase-config.js), privacy.html, terms.html, CNAME, GitHub Actions workflow, assets, learning-hub posts, content, scripts and other existing repository files were retained from your uploaded repository.
+
+HOW TO PUBLISH
+1. Open https://github.com/redeemedhackerpros/redeemedhackerpro-website
+2. Create a new branch named website-rebuild-review (recommended).
+3. Upload/replace the files from this ZIP in the repository root, keeping the folder structure. Do not upload the outer ZIP itself as a website file.
+4. Review the changed files and commit with: Improve homepage and add service pages
+5. Check the GitHub Pages deployment and test the homepage, all four service pages, /posts/, /portal.html, /privacy.html and /terms.html.
+6. If everything works, merge the review branch into main.
+
+IMPORTANT EMAIL NOTE
+The new contact form still prepares an email draft; it does not submit or store leads on a server. The visible contact address is support@redeemedhackerpro.com. The existing website script was configured to open redeemedhackerpro@zohomail.com, so that original destination has been retained. Confirm that this Zoho inbox is still monitored and that the support@ address forwards to it (or tell your administrator to align them) before relying on the form.
+
+SECURITY NOTE
+The existing Supabase configuration and portal files have not been modified. Never add a Supabase service-role key, passwords, private keys or seed phrases to public website files. Database writes require correct Supabase Row Level Security policies.
+
+LIMITATIONS
+This package has not been pushed to GitHub or published by ChatGPT. The public website deployment, live form delivery, domain/HTTPS, and portal database behavior still require post-publication verification.

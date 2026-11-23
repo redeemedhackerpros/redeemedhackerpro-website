@@ -1,38 +1,42 @@
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
-if (menuToggle && navLinks) {
-  menuToggle.addEventListener('click', () => {
-    const open = navLinks.classList.toggle('open');
-    menuToggle.setAttribute('aria-expanded', String(open));
-    menuToggle.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
-  });
-  navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-    navLinks.classList.remove('open');
-    menuToggle.setAttribute('aria-expanded', 'false');
-  }));
-}
-document.getElementById('year').textContent = new Date().getFullYear();
+(() => {
+  "use strict";
+  const menuButton = document.querySelector(".menu-toggle");
+  const nav = document.querySelector("#primary-nav");
+  if (menuButton && nav) {
+    menuButton.addEventListener("click", () => {
+      const expanded = menuButton.getAttribute("aria-expanded") === "true";
+      menuButton.setAttribute("aria-expanded", String(!expanded));
+      nav.classList.toggle("open", !expanded);
+    });
+    nav.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+      nav.classList.remove("open");
+      menuButton.setAttribute("aria-expanded", "false");
+    }));
+  }
 
-// Website enquiries are prepared for the support inbox in Zoho Mail.
-// This mailto form opens the visitor's email app; it does not send or store messages itself.
-const CONTACT_EMAIL = 'redeemedhackerpro@zohomail.com';
-const form = document.getElementById('contactForm');
-if (form) {
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const data = new FormData(form);
-    const name = String(data.get('name') || '').trim();
-    const email = String(data.get('email') || '').trim();
-    const topic = String(data.get('topic') || '').trim();
-    const message = String(data.get('message') || '').trim();
-    const status = document.getElementById('formMessage');
-    if (!name || !email || !topic || !message) {
-      status.textContent = 'Please complete all required fields.';
-      return;
-    }
-    const subject = encodeURIComponent('Website enquiry: ' + topic);
-    const body = encodeURIComponent('Name: ' + name + '\nReply email: ' + email + '\nTopic: ' + topic + '\n\nMessage:\n' + message + '\n\nPlease do not send or request private keys, seed phrases, passwords, or authentication codes.');
-    window.location.href = 'mailto:' + CONTACT_EMAIL + '?subject=' + subject + '&body=' + body;
-    status.textContent = 'Your email app should open with the enquiry prepared. Review it before sending.';
-  });
-}
+  const year = document.querySelector("#year");
+  if (year) year.textContent = new Date().getFullYear();
+
+  const form = document.querySelector("#enquiry-form");
+  if (form) {
+    form.addEventListener("submit", event => {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+      const data = new FormData(form);
+      const name = String(data.get("name") || "").trim();
+      const email = String(data.get("email") || "").trim();
+      const topic = String(data.get("topic") || "").trim();
+      const message = String(data.get("message") || "").trim();
+      const subject = encodeURIComponent("Website enquiry — " + topic);
+      // Keep the original Zoho support inbox configured in the existing website.
+      const body = encodeURIComponent(
+        "Name: " + name + "\nEmail: " + email + "\nTopic: " + topic +
+        "\n\nMessage:\n" + message +
+        "\n\nI understand this enquiry was prepared by the website and is being sent from my email application."
+      );
+      const feedback = document.querySelector("#form-feedback");
+      if (feedback) feedback.textContent = "Your email application should open with a prepared message. Review it before sending.";
+      window.location.href = "mailto:redeemedhackerpro@zohomail.com?subject=" + subject + "&body=" + body;
+    });
+  }
+})();

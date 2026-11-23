@@ -1,0 +1,12 @@
+Updated/added files:
+index.html
+styles.css
+script.js
+sitemap.xml
+services/crypto-transactions.html
+services/scam-awareness.html
+services/security-training.html
+services/wallet-security.html
+DEPLOY-INSTRUCTIONS.txt
+
+All other repository files were copied unchanged from the uploaded original repository ZIP.
